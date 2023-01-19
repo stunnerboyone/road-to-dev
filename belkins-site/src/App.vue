@@ -1,51 +1,34 @@
 <script>
-    import HeaderDesktop from './components/HeaderDesktop.vue';
+    import Header from './components/Header.vue';
+    import Content from './components/Content.vue';
+    import Footer from './components/Footer.vue';
+
+    export default{
+        components:{
+            Header,
+            Content,
+            Footer,
+        }
+    }
 </script>
 
 <template>
-    <div class="header">
-        <div class = "content">
-            <div class = "logo" >
-                <img src="./ui/Group86.png" alt="logo" weight = 90 height = 32>
-            </div>
-            <nav class = "desktop-nav">
-                <div class = "desktop-item">Solutions</div>
-                <div class = "desktop-item">How it works</div>
-                <div class = "desktop-item">Resources</div>
-                <div class = "desktop-item">More</div>
-                <a href="#">Pricing</a>
-            </nav>
-            <div class = "buttons">
-                <button class="contact_us_button">Contact Us</button>
-                <button class="book_a_call">Book a Call</button>
-            </div>
+    <div>
+        <header>
+            <Header />
+        </header>
+        <div>
+            <Content />
         </div>
+        <footer>
+            <Footer />
+        </footer>
     </div>
 </template>
 
-<style lang="scss">
-    .header{
-        background-color: pink;
-        display: flex;
-        padding: 3px, 2px, 2px, 3px;
-        height: 72px;
-        button{
-            color: aqua;
-        }
-    }
-    .content{
-        display: flex;
-        margin: 16px;
-        margin-left: 64px   ;
-    }
-    .logo{
-        display: flex;
-        margin: 2;
-    }
-    .desktop-nav{
-        display: flex;
-        margin: 2px;
-
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Kaushan+Script&family=Montserrat:wght@400;700&family=Roboto&display=swap');
+    *{
+        font-family: inter;
     }
 </style>
-
