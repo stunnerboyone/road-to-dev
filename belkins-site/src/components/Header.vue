@@ -2,7 +2,7 @@
     <div class="header">
         <div clss = "content">
             <div class = "logo">
-                <img src="/src/ui/Group86.png" alt="logo" weight = "85" height = "27">
+                <img src="/src/ui/Group86.png" alt="logo" weight = "90" height = "32">
             </div>
             <nav class = "menu">
                 <div class = "nav-item">Solutions <img src="/src/ui/ArrowDown.png"></div>
