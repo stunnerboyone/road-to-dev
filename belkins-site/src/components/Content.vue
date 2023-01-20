@@ -1,13 +1,24 @@
 <template>
     <div class = "content">
         <div class="welcome">
+            <div class="schedule-a-meeting">
 
+            </div>
+            <div class = "calendar">
+
+            </div>
         </div>
         <div class="partners">
 
         </div>
         <div class = "how-it-works">
-            
+            <h1>How It Works</h1>
+            <div class="campaign-outline">
+                
+            </div>
+            <div class="button">
+
+            </div>
         </div>
         <div class = "apps-count">
 
@@ -25,9 +36,9 @@
 
         </div>
         <div class = "results">
-
+            
         </div>
-
+        
         <div class = "meet-the-clients">
 
         </div>
@@ -45,8 +56,7 @@
 
 <style>
     .content{
-        display:grid;
+        display:flex;
         gap: 25px;
-
     }
 </style>
