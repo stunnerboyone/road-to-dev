@@ -31,4 +31,5 @@
     *{
         font-family: inter;
     }
+    
 </style>

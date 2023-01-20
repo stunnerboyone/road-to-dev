@@ -1,16 +1,17 @@
 <template>
     <div class="header">
-        <div class = "content">
-            <div class = "logo" >
+        <div clss = "content">
+            <div class = "logo">
                 <img src="/src/ui/Group86.png" alt="logo" weight = "85" height = "27">
             </div>
-            <nav class = "nav">
-                <div class = "nav-item">Solutions <img src="/Projects/road-to-dev/belkins-site/src/ui/ArrowDown.png"></div>
-                <div class = "nav-item">How it works <img src="/Projects/road-to-dev/belkins-site/src/ui/ArrowDown.png"></div>
-                <div class = "nav-item">Resources <img src="/Projects/road-to-dev/belkins-site/src/ui/ArrowDown.png"></div>
-                <div class = "nav-item">More <img src="/Projects/road-to-dev/belkins-site/src/ui/ArrowDown.png" weight = "2" height = "2"></div>
+            <nav class = "menu">
+                <div class = "nav-item">Solutions <img src="/src/ui/ArrowDown.png"></div>
+                <div class = "nav-item">How it works <img src="/src/ui/ArrowDown.png"></div>
+                <div class = "nav-item">Resources <img src="src/ui/ArrowDown.png"></div>
+                <div class = "nav-item">More <img src="/src/ui/ArrowDown.png"></div>
                 <div class = "nav-item"><a href="#">Pricing</a></div>
             </nav>
+            <div></div>
             <div class = "buttons">
                 <button class="button1">Contact Us</button>
                 <button class="button2">Book a Call</button>
@@ -22,41 +23,59 @@
 <style lang="scss">
     $orange: #FF5E00;
     $white: #FFFFFF;
-
+    $typographyBody: #3D3D3D;
     .header{
-        max-width: 1440px;
-        min-width: 360px;
-        background-color: $white;
-        display: flex;
-        height: 72px;
-        place-items: center;
+        position: fixed;
+        display: grid;
+        gap: 25px;
+        justify-content: normal;
+        grid-column-end: auto;
+        box-sizing: border-box;
+        padding: 16px 64px;
+        font-size: 100%;
+        vertical-align: baseline;
     }
     .content{
         display: flex;
-        margin: 16px;
-        margin-left: 64px;
+        align-items: center;
+        max-width: 1440px;
+        height: 72px;
+        margin: 0 auto;
+        padding: 0;
     }
-    
-    .nav{
+    .logo{
+        display: flex;
+    }
+    .menu{
         display: flex;
         margin-left: 20px;
-        place-items: center;
+        align-items: center;
+        vertical-align: baseline;
         .nav-item{
             margin-left: 20px;
-            
+            color: $typographyBody;
+            font-size: 100%;
+        }
+        a{
+            color: $typographyBody;
+            font-size: 100%;
         }
     }
 
     .buttons{
         display: flex;
         float: right;
-        margin-left: 50px;
+        .button{
+            background-color: $white;
+            color: $typographyBody;
+            font-size: 100%;
+        }
         .button2{
             background-color: $orange;
             color: $white;
+            font-size: 100%;
         }
     }
-
 
     @media (max-width: 1280px){
 
