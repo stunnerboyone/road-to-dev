@@ -1,23 +1,22 @@
 <template>
-    <div class="header">
-        <div clss = "content">
-            <div class = "logo">
-                <img src="/src/ui/Group86.png" alt="logo" weight = "90" height = "32">
-            </div>
-            <nav class = "menu">
-                <div class = "nav-item">Solutions <img src="/src/ui/ArrowDown.png"></div>
-                <div class = "nav-item">How it works <img src="/src/ui/ArrowDown.png"></div>
-                <div class = "nav-item">Resources <img src="src/ui/ArrowDown.png"></div>
-                <div class = "nav-item">More <img src="/src/ui/ArrowDown.png"></div>
-                <div class = "nav-item"><a href="#">Pricing</a></div>
+    <div class="header-content">
+            <nav class = "logo-and-menu">
+                <div class="header-logo">
+                    <img src="./ui/Group86.png" alt="logo" >
+                </div>
+                <div class = "menu">
+                    <div class = "nav-item">What We Do <img src="./ui/ArrowDown.png"></div>
+                    <div class = "nav-item">Customer Success <img src="./ui/ArrowDown.png"></div>
+                    <div class = "nav-item">Resources <img src="./ui/ArrowDown.png"></div>
+                    <div class = "nav-item">Company <img src="./ui/ArrowDown.png"></div>
+                    <div class = "nav-item"><a href="#">Pricing</a></div>
+                </div>
             </nav>
-            <div></div>
             <div class = "buttons">
                 <button class="button1">Contact Us</button>
                 <button class="button2">Book a Call</button>
             </div>
         </div>
-    </div>
 </template>
 
 <style lang="scss">
@@ -25,34 +24,39 @@
     $orange: #FF5E00;
     $white: #FFFFFF;
     $typographyBody: #3D3D3D;
-    .header{
+    .header-content{
         display: flex;
-        justify-content: space-around;
-        flex-direction: row;
-        padding: 16px 64px;
-        font-size: 100%;
-        vertical-align: baseline;
-    }
-    .content{
-        display: flex;
-        justify-content: space-between;
         flex-direction: row;
         align-items: center;
-        max-width: 1440px;
-        height: 72px;
-        margin: 0 auto;
-        padding: 0;
+        padding: 0px;
+        gap: 263;
     }
-    .logo{
-    }
-    .menu{
+    .logo-and-menu{
         display: flex;
-        justify-content: space-between;
         flex-direction: row;
-        margin-left: 20px;
+        padding: 0px;
         align-items: center;
-        vertical-align: baseline;
+        gap: 40px;
+        .header-logo{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            width: 90px;
+            height: 32px;
+        }
+        .menu{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 0px;
+            gap: 24px;
+        }
         .nav-item{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 0px;
+            gap: 4px;
             margin-left: 20px;
             color: $typographyBody;
             font-size: 100%;
@@ -61,20 +65,21 @@
             color: $typographyBody;
             font-size: 100%;
         }
+        .buttons{
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-end;
+                align-items: center;
+                padding: 0px;
+                gap: 16px;
+            .button{
+                display: flex;
+            }
+            .button2{
+                background-color: $orange;
+                color: $white;
+                font-size: 100%;
+            }
     }
-
-    .buttons{
-        .button{
-            background-color: $white;
-            color: $typographyBody;
-            font-size: 100%;
-        }
-        .button2{
-            background-color: $orange;
-            color: $white;
-            font-size: 100%;
-        }
-    }
-
-
+}
 </style>
