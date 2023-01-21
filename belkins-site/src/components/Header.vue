@@ -21,22 +21,22 @@
 </template>
 
 <style lang="scss">
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Kaushan+Script&family=Montserrat:wght@400;700&family=Roboto&display=swap');
     $orange: #FF5E00;
     $white: #FFFFFF;
     $typographyBody: #3D3D3D;
     .header{
-        position: fixed;
-        display: grid;
-        gap: 25px;
-        justify-content: normal;
-        grid-column-end: auto;
-        box-sizing: border-box;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
         padding: 16px 64px;
         font-size: 100%;
         vertical-align: baseline;
     }
     .content{
         display: flex;
+        justify-content: space-between;
+        flex-direction: row;
         align-items: center;
         max-width: 1440px;
         height: 72px;
@@ -44,10 +44,11 @@
         padding: 0;
     }
     .logo{
-        display: flex;
     }
     .menu{
         display: flex;
+        justify-content: space-between;
+        flex-direction: row;
         margin-left: 20px;
         align-items: center;
         vertical-align: baseline;
@@ -63,8 +64,6 @@
     }
 
     .buttons{
-        display: flex;
-        float: right;
         .button{
             background-color: $white;
             color: $typographyBody;
@@ -77,10 +76,5 @@
         }
     }
 
-    @media (max-width: 1280px){
 
-    }
-    @media (max-width: 1000px){
-
-    }
 </style>

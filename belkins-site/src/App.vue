@@ -17,20 +17,11 @@
         <header>
             <Header />
         </header>
-        <div>
+        <div  class="content">
             <Content />
         </div>
-        <div>
+        <footer>
             <Footer />
-        </div>
+        </footer>
     </div>
 </template>
-
-<style>
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Kaushan+Script&family=Montserrat:wght@400;700&family=Roboto&display=swap');
-    
-    *{
-        font-family: inter;
-    }
-    
-</style>

@@ -1,5 +1,5 @@
 <template>
-    <div class = "content">
+    <div class = "content-body">
         <div class="welcome">
             <div class="schedule-a-meeting">
 
@@ -55,8 +55,10 @@
 </template>>
 
 <style>
-    .content{
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Kaushan+Script&family=Montserrat:wght@400;700&family=Roboto&display=swap');
+    .content-body{
         display:flex;
-        gap: 25px;
+        justify-content: space-between;
+        align-content:center;
     }
 </style>
