@@ -7,100 +7,121 @@ $orange: #FF5E00;
 $mainGray: #3D3D3D;
 $typographyHeadings: #292929;
 
-html{
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    align-items:center;
-}
+
 body{
     display: flex;
-    justify-content: space-between;
     flex-direction: column;
+    align-items:center;
     font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 header{
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    position: fixed;
+    justify-content: center;
+    right: 0;
+    left: 0;
+    height: 65px;
+    color: #000;
+    box-sizing: border-box;
     padding: 16px 64px;
-    box-shadow: 8px 16px 32px 2px;
+    box-shadow: 8px 16px 32px rgb(0 0 0 /3%);
     background-color: $white;
     .header-content{
         display: flex;
+        width: 1440px;
         flex-direction: row;
         align-items: center;
         padding: 0px;
-        gap: 263;
-    }
-    .logo-and-menu{
-        display: flex;
-        flex-direction: row;
-        padding: 0px;
-        align-items: center;
         gap: 40px;
-        .header-logo{
+        justify-content: space-between;
+        .logo-and-menu{
             display: flex;
             flex-direction: row;
-            align-items: center;
-            width: 90px;
-            height: 32px;
-        }
-        .menu{
-            display: flex;
-            flex-direction: row;
-            align-items: center;
             padding: 0px;
-            gap: 24px;
+            align-items: center;
+            gap: 40px;
+            .header-logo{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                width: 90px;
+                height: 32px;
+            }
+            .menu{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                padding: 0px;
+                gap: 24px;
+            }
+            .nav-item{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                box-sizing: border-box;
+                padding: 0px;
+                gap: 4px;
+                color: $typographyBody;
+                font-family: Inter, sans-serif;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 24px;
+                vertical-align: baseline;
+                :hover{
+                    color: $orange;
+                }
+            }
+            a{
+                color: $typographyBody;
+                font-family: Inter, sans-serif;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 24px;
+            }
         }
-        .nav-item{
+        .flex-block{
+            width: auto;
+            margin: auto;
+            background:#292929;
+        }
+
+        .header-buttons{
             display: flex;
             flex-direction: row;
-            align-items: center;
+            justify-content:flex-end;
+         //   align-items: center;
             padding: 0px;
-            gap: 4px;
-            margin-left: 20px;
-            color: $typographyBody;
-            font-size: 100%;
-        }
-        a{
-            color: $typographyBody;
-            font-size: 100%;
-        }
-    }
-    .header-buttons{
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-        align-items: center;
-        padding: 0px;
-        gap: 16px;
-        .button1{
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            box-sizing: border-box;
-            align-items: center;
-            padding: 8px 20px;
-            gap: 10px;
-            border: 1px solid #CCCCCC;
-            border-radius: 6px;
-        }
-        .button2{
-            flex-direction: row;
-            justify-content: center;
-            box-sizing: border-box;
-            padding: 8px 20px;
-            gap:10px;
-            background-color: $orange;
-            color: $white;
-            border-radius: 6px;
+            gap: 16px;
+            margin-left: 40px;
+            .header-button-1{
+                width: 115px;
+                height: 40px;
+                box-sizing: border-box;
+                gap: 10px;
+                background-color:$white;
+                border: 1px solid #CCCCCC;
+                border-radius: 6px;
+            }
+            .header-button-2{
+                width: 115px;
+                height: 40px;
+                gap:10px;
+                background-color: $orange;
+                color: $white;
+                border-radius: 6px;
+                border: none;
+            }
         }
     }
 }
 
 .content{
     display: flex;
+    width: 1344px;
     flex-direction: column;
     align-items: center;
     padding: 0;
@@ -139,6 +160,7 @@ header{
                 font-size: 18px;
                 line-height: 32px;
                 color: $mainGray;
+                text-decoration: none;
             }
             button{
                 display:flex;
@@ -187,64 +209,121 @@ header{
             align-items: flex-start;
             padding: 0px;
             gap: 1px;
+
+            h2{
+                display:flex;
+                flex-direction: row;
+                align-items:flex-start;
+                padding: 0px;
+            }
+            p{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                padding: 0px 112px 0px 32px;
+            }
+            
         }
-        .campaignOutline{
+        .step{
             display: flex;
             flex-direction: row;
             align-items: center;
             padding: 48px 80px 48px 0px;
             gap: 80px;
+            border-bottom: 2px outset;
+        }
+        .how-it-works-button{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding: 16px 16px 16px 24px;
+            gap: 24px;
+            background-color:$orange;
+            color:$white;
+            border-radius: 8px;
         }
     }
 }
 
 
 footer{
-    display: flex;
+    display: grid;
+    justify-content: center;
+    right: 0;
+    left: 0;
+    width: 1344px;
+    padding: 56px 16px 40px 16px;
+    gap: 80px;
     .footer-conteiner{
         display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: space-between;
-        padding:56px 0 40px;
-        gap: 64px;
+        flex-direction: colunm;
+        gap: 80px;
+        align-items:flex-start;
+        a{
+            font-family: Inter, sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 28px;
+            color: $typographyBody;
+        }
+        p{
+            font-family: Inter, sans-serif;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 24px;
+            color: $typographyHeadings
+        }
     }
     .info{
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
-        align-items: flex-start;
-        padding-right: 32px;
-        min-width: 224px;
-        background-color: pink;
+        justify-content: flex-start;
+        gap: 64px;
+        width: 224px;
         .contacts{
             display: flex;
             flex-direction: column;
-            box-sizing: border-box;
-            background-color: aqua;
+            justify-content: start;
+            padding: 0 32px 0 0;
+            gap: 16px;
         }
     }
     .navigation{
         display: flex;
-        flex-direction: column;
-        box-sizing: border-box;
-        justify-content: space-between;
-        background-color: antiquewhite;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 24px;
-        .solutions{
+        flex-direction: row;
+        justify-content: flex-end;
+        gap: 75px;
+        align-items:flex-start;
+        
+        .navigation-item{
             display: flex;
             flex-direction: column;
-            background-color: burlywood;
+            justify-content: center;
+            gap: 12px;
+            a:hover{
+                color:$orange;
+            }
         }
     }
     .bottom{
         display: flex;
         flex-direction: row;
+        justify-content:space-between;
+        gap: 80px;
         align-items:center;
-        padding: 0px;
-        gap: 80px; 
-        background-color: chartreuse;
+        .bottom-item{
+            gap:235px;
+        }
+        a, p{
+            font-family: Inter, sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 16px;
+            color: $typographyGrey;
+        }
     }
 }
