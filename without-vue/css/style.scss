@@ -5,11 +5,13 @@ $typographyGrey: #B8B8B8;
 $white: #FFFFFF;
 $orange: #FF5E00;
 $mainGray: #3D3D3D;
+$typographyHeadings: #292929;
 
 html{
     display: flex;
     justify-content: space-between;
     flex-direction: column;
+    align-items:center;
 }
 body{
     display: flex;
@@ -157,6 +159,41 @@ header{
             align-items:center;
             padding: 0;
             gap: 10px;
+        }
+        .partners{
+            display: flex;
+            flex-direction: column;
+            padding: 0px 16px;
+            gap: 12px;
+        }
+    }
+    .how-it-works{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px 16px;
+        gap: 48px;
+        h1{
+            font-family: "Inter";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 56px;
+            color: $typographyHeadings;
+        }
+        .steps{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 0px;
+            gap: 1px;
+        }
+        .campaignOutline{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 48px 80px 48px 0px;
+            gap: 80px;
         }
     }
 }

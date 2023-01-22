@@ -1,1 +1,1 @@
-{"mappings":"","sources":["scripts/script.js"],"sourcesContent":[null],"names":[],"version":3,"file":"Index.fdac86c9.js.map","sourceRoot":"/__parcel_source_root/"}
+{"mappings":"AAAA,EAAE,UAAU,KAAK,CAAC,WAAU;IACxB,EAAE,WAAW,KAAK;AACtB","sources":["scripts/script.js"],"sourcesContent":["$(document).ready(function(){\r\n    $('.slider').slick();\r\n});"],"names":[],"version":3,"file":"Index.fdac86c9.js.map","sourceRoot":"/__parcel_source_root/"}

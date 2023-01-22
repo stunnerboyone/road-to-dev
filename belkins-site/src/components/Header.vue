@@ -1,7 +1,8 @@
 <template>
-    <div class="header-content">
+    <div class="header">
+        <div class="content">
             <nav class = "logo-and-menu">
-                <div class="header-logo">
+                <div class="logo">
                     <img src="./ui/Group86.png" alt="logo" >
                 </div>
                 <div class = "menu">
@@ -17,6 +18,7 @@
                 <button class="button2">Book a Call</button>
             </div>
         </div>
+    </div>
 </template>
 
 <style lang="scss">
@@ -24,7 +26,15 @@
     $orange: #FF5E00;
     $white: #FFFFFF;
     $typographyBody: #3D3D3D;
-    .header-content{
+
+    .header{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        font-family: 'Inter', sans-serif;
+    }
+
+    .content{
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -37,7 +47,7 @@
         padding: 0px;
         align-items: center;
         gap: 40px;
-        .header-logo{
+        .logo{
             display: flex;
             flex-direction: row;
             align-items: center;
@@ -66,19 +76,32 @@
             font-size: 100%;
         }
         .buttons{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            align-items: center;
+            padding: 0px;
+            gap: 16px;
+            .button1{
                 display: flex;
                 flex-direction: row;
-                justify-content: flex-end;
+                justify-content: center;
+                box-sizing: border-box;
                 align-items: center;
-                padding: 0px;
-                gap: 16px;
-            .button{
-                display: flex;
+                padding: 8px 20px;
+                gap: 10px;
+                border: 1px solid #CCCCCC;
+                border-radius: 6px;
             }
             .button2{
+                flex-direction: row;
+                justify-content: center;
+                box-sizing: border-box;
+                padding: 8px 20px;
+                gap:10px;
                 background-color: $orange;
                 color: $white;
-                font-size: 100%;
+                border-radius: 6px;
             }
     }
 }
