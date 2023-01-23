@@ -22,7 +22,7 @@ header {
   box-shadow: 8px 16px 32px rgba(0, 0, 0, 0.03);
   background-color: #FFFFFF;
 }
-header .header-content {
+header .content {
   display: flex;
   width: 1440px;
   flex-direction: row;
@@ -31,35 +31,35 @@ header .header-content {
   gap: 40px;
   justify-content: space-between;
 }
-header .header-content .logo-and-menu {
+header .content .logo-and-menu {
   display: flex;
   flex-direction: row;
   padding: 0px;
   align-items: center;
   gap: 40px;
 }
-header .header-content .logo-and-menu .header-logo {
+header .content .logo-and-menu .logo {
   display: flex;
   flex-direction: row;
   align-items: center;
   width: 90px;
   height: 32px;
 }
-header .header-content .logo-and-menu .menu {
+header .content .logo-and-menu .menu {
   display: flex;
   flex-direction: row;
   align-items: center;
   padding: 0px;
   gap: 24px;
 }
-header .header-content .logo-and-menu .nav-item {
+header .content .logo-and-menu .nav-item {
   display: flex;
   flex-direction: column;
   align-items: center;
   box-sizing: border-box;
   padding: 0px;
 }
-header .header-content .logo-and-menu .nav-item .item-head {
+header .content .logo-and-menu .nav-item .item {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -74,10 +74,10 @@ header .header-content .logo-and-menu .nav-item .item-head {
   line-height: 24px;
   vertical-align: baseline;
 }
-header .header-content .logo-and-menu .nav-item a:hover {
+header .content .logo-and-menu .nav-item a:hover {
   color: #FF5E00;
 }
-header .header-content .logo-and-menu a {
+header .content .logo-and-menu a {
   color: #3D3D3D;
   font-family: Inter, sans-serif;
   font-style: normal;
@@ -85,12 +85,12 @@ header .header-content .logo-and-menu a {
   font-size: 14px;
   line-height: 24px;
 }
-header .header-content .flex-block {
+header .content .flex-block {
   width: auto;
   margin: auto;
   background: #292929;
 }
-header .header-content .header-buttons {
+header .content .buttons {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
@@ -98,7 +98,7 @@ header .header-content .header-buttons {
   gap: 16px;
   margin-left: 40px;
 }
-header .header-content .header-buttons .header-button-1 {
+header .content .buttons .white-button {
   width: 115px;
   height: 40px;
   box-sizing: border-box;
@@ -107,7 +107,7 @@ header .header-content .header-buttons .header-button-1 {
   border: 1px solid #CCCCCC;
   border-radius: 6px;
 }
-header .header-content .header-buttons .header-button-2 {
+header .content .buttons .orange-button {
   width: 115px;
   height: 40px;
   gap: 10px;
@@ -225,7 +225,7 @@ header .header-content .header-buttons .header-button-2 {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 48px 80px 48px 0px;
+  padding: 48px 0px;
   gap: 80px;
   border-bottom: 2px outset;
 }
@@ -268,6 +268,7 @@ header .header-content .header-buttons .header-button-2 {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  gap: 32px;
 }
 .content .cta-form .info .contacts .content h3 {
   font-family: Inter, sans-serif;
@@ -308,6 +309,8 @@ header .header-content .header-buttons .header-button-2 {
   gap: 32px;
 }
 .content .cta-form .info .contacts .statistic h3 {
+  margin: 0;
+  padding: 0;
   font-family: Inter, sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -318,7 +321,7 @@ header .header-content .header-buttons .header-button-2 {
 .content .cta-form .info .contacts .statistic .items {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: flex-start;
   gap: 24px;
 }
 .content .cta-form .info .contacts .statistic .items .point {
@@ -326,6 +329,7 @@ header .header-content .header-buttons .header-button-2 {
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
+  gap: 32px;
 }
 .content .cta-form .info .contacts .statistic .items .point .value {
   width: 140px;
@@ -348,14 +352,14 @@ header .header-content .header-buttons .header-button-2 {
   line-height: 168%;
   color: #666666;
 }
-.content .cta-form .info .cta-awards {
+.content .cta-form .info .awards {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding: 0;
   gap: 32px;
 }
-.content .cta-form .info .cta-awards p {
+.content .cta-form .info .awards p {
   font-family: Inter, sans-serif;
   font-style: normal;
   font-style: 600;
@@ -373,13 +377,13 @@ footer {
   padding: 56px 16px 40px 16px;
   gap: 80px;
 }
-footer .footer-conteiner {
+footer .conteiner {
   display: flex;
   flex-direction: colunm;
   gap: 80px;
   align-items: flex-start;
 }
-footer .footer-conteiner a {
+footer .conteiner a {
   font-family: Inter, sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -387,7 +391,7 @@ footer .footer-conteiner a {
   line-height: 28px;
   color: #3D3D3D;
 }
-footer .footer-conteiner p {
+footer .conteiner p {
   font-family: Inter, sans-serif;
   font-style: normal;
   font-weight: 600;
@@ -416,13 +420,13 @@ footer .navigation {
   gap: 75px;
   align-items: flex-start;
 }
-footer .navigation .navigation-item {
+footer .navigation .item {
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 12px;
 }
-footer .navigation .navigation-item a:hover {
+footer .navigation .item a:hover {
   color: #FF5E00;
 }
 footer .bottom {
@@ -432,7 +436,7 @@ footer .bottom {
   gap: 80px;
   align-items: center;
 }
-footer .bottom .bottom-item {
+footer .bottom .item {
   gap: 235px;
 }
 footer .bottom a, footer .bottom p {

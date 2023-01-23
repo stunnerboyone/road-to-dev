@@ -33,7 +33,7 @@ header{
     padding: 16px 64px;
     box-shadow: 8px 16px 32px rgb(0 0 0 /3%);
     background-color: $white;
-    .header-content{
+    .content{
         display: flex;
         width: 1440px;
         flex-direction: row;
@@ -47,7 +47,7 @@ header{
             padding: 0px;
             align-items: center;
             gap: 40px;
-            .header-logo{
+            .logo{
                 display: flex;
                 flex-direction: row;
                 align-items: center;
@@ -67,7 +67,7 @@ header{
                 align-items: center;
                 box-sizing: border-box;
                 padding: 0px;
-                .item-head{
+                .item{
                     display: flex;
                     flex-direction: row;
                     align-items: center;
@@ -101,15 +101,14 @@ header{
             background:#292929;
         }
 
-        .header-buttons{
+        .buttons{
             display: flex;
             flex-direction: row;
             justify-content:flex-end;
-         //   align-items: center;
             padding: 0px;
             gap: 16px;
             margin-left: 40px;
-            .header-button-1{
+            .white-button{
                 width: 115px;
                 height: 40px;
                 box-sizing: border-box;
@@ -118,7 +117,7 @@ header{
                 border: 1px solid #CCCCCC;
                 border-radius: 6px;
             }
-            .header-button-2{
+            .orange-button{
                 width: 115px;
                 height: 40px;
                 gap:10px;
@@ -239,7 +238,7 @@ header{
             display: flex;
             flex-direction: row;
             align-items: center;
-            padding: 48px 80px 48px 0px;
+            padding: 48px 0px;
             gap: 80px;
             border-bottom: 2px outset;
         }
@@ -285,6 +284,7 @@ header{
                     display: flex;
                     flex-direction: column;
                     align-items: flex-start;
+                    gap: 32px;
 
                     h3{
                         font-family: Inter, sans-serif;
@@ -327,6 +327,8 @@ header{
                     gap: 32px;
                     
                     h3{
+                        margin: 0;
+                        padding: 0;
                         font-family: Inter, sans-serif;
                         font-style: normal;
                         font-weight: 700;
@@ -338,13 +340,14 @@ header{
                     .items{
                         display: flex;
                         flex-direction: column;
-                        justify-content: flex-end;
+                        justify-content: flex-start;
                         gap:24px;
                         .point{
                             display: flex;
                             flex-direction: row;
                             justify-content: flex-start;
                             align-items:center;
+                            gap: 32px;
                             
                             .value{
                                 width: 140px;
@@ -372,19 +375,19 @@ header{
                 }
             }
 
-            .cta-awards{
+            .awards{
                 display: flex;
                 flex-direction: column;
                 align-items: flex-start;
                 padding: 0;
                 gap: 32px;
                 p{
-                font-family: Inter, sans-serif;
-                font-style: normal;
-                font-style: 600;
-                font-size: 18px;
-                line-height: 28px;
-                color: $paletteGrey;
+                    font-family: Inter, sans-serif;
+                    font-style: normal;
+                    font-style: 600;
+                    font-size: 18px;
+                    line-height: 28px;
+                    color: $paletteGrey;
                 }
             }
         }
@@ -400,7 +403,7 @@ footer{
     width: 1344px;
     padding: 56px 16px 40px 16px;
     gap: 80px;
-    .footer-conteiner{
+    .conteiner{
         display: flex;
         flex-direction: colunm;
         gap: 80px;
@@ -443,7 +446,7 @@ footer{
         gap: 75px;
         align-items:flex-start;
         
-        .navigation-item{
+        .item{
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -459,7 +462,7 @@ footer{
         justify-content:space-between;
         gap: 80px;
         align-items:center;
-        .bottom-item{
+        .item{
             gap:235px;
         }
         a, p{
