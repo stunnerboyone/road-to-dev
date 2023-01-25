@@ -15,22 +15,22 @@
           <img src="./ui/Group86.png" weight="81" height="25,5" alt="Belkins" />
         </div>
         <div class="header-navigation">
-          <div class="header-navigation__item">
+          <span class="header-navigation__item">
               What We Do
               <img class = "header-navigation__img" src="./ui/ArrowDown.png" />
-          </div>
-          <div class="header-navigation__item">
+          </span>
+          <span class="header-navigation__item">
               Customer Success
               <img class = "header-navigation__img" src="./ui/ArrowDown.png" />
-          </div>
-          <div class="header-navigation__item">
+          </span>
+          <span class="header-navigation__item">
             Resources 
             <img class = "header-navigation__img" src="./ui/ArrowDown.png" />
-          </div>
-          <div class="header-navigation__item">
+          </span>
+          <span class="header-navigation__item">
               Company 
               <img class = "header-navigation__img" src="./ui/ArrowDown.png" />
-          </div>
+          </span>
           <a class="header-navigation__link" href="#">Pricing</a>
         </div>
         <div class="flexible-block"></div>
@@ -40,7 +40,7 @@
         </div>
       </d>
     </header>
-    <div class="home-screen">
+    <div class="home-block">
       <div class="schedule-a-meeting">
         <div>
           <h1>B2B Appointment <br />Serring Services</h1>
@@ -56,7 +56,6 @@
       <div class="calendar"></div>
     </div>
     <div class="partners">
-      <div class="slider">
           <img src="./ui/Partners/Size=80px, Company=Ami, State=Default.png" />
           <img
             src="./ui/Partners/Size=80px, Company=Apex Logistics, State=Default.png"
@@ -198,7 +197,6 @@
             src="./ui/Partners/Size=80px, Company=WSI, State=Default.png"
             alt=""
           />
-      </div>
     </div>
     <div class="how-it-works">
         <h1>How It Works</h1>
@@ -309,9 +307,9 @@
             <img src="./ui/Group86.png" alt="logo" weight="90" height="32" />
           </div>
           <div class="footer-contacts">
-            <a class="footer-contacts__link" href="tel:+1 302-803-5506" class="link">+1 302-803-5506</a>
-            <a class="footer-contacts__link" href="mailto:sales@belkins.io" class="link">sales@belkins.io</a>
-            <a class="footer-contacts__link" href="mailto:press@belkins.io" class="link">press@belkins.io</a>
+            <div class="footer-contacts__link"><a href="tel:+1 302-803-5506" class="link">+1 302-803-5506</a></div>
+            <div class="footer-contacts__link"><a href="mailto:sales@belkins.io" class="link">sales@belkins.io</a></div>
+            <div class="footer-contacts__link"><a href="mailto:press@belkins.io" class="link">press@belkins.io</a></div>
           </div>
           <div class="google-partner">
             <img
@@ -320,48 +318,46 @@
             />
           </div>
         </div>
-        <div class="bottom-navigation">
-          <div class="navigation-block">
-            <p class="navigation-block__text">Solutions</p>
-            <a class="navigation-block__link" href="#">Appointment Setting</a>
-            <a class="navigation-block__link" href="#">Inbound Appointment<br>Setting</a>
-            <a class="navigation-block__link" href="#">Lead Research</a>
-            <a class="navigation-block__link" href="#">The LinkedIn Influencer<br>Program</a>
-          </div>
-          <div class="navigation-block">
-            <p class="navigation-block__text">How it works</p>
-            <a class="navigation-block__link" href="#">Belkins Approach</a>
-            <a class="navigation-block__link" href="#">Our Account Manager</a>
-            <a class="navigation-block__link" href="#">Our Template Writer</a>
-            <a class="navigation-block__link" href="#">Our Lead Research<br>Specialist</a>
-            <a class="navigation-block__link" href="#">Our SDR</a>
-            <a class="navigation-block__link" href="#">Our Email Deliverability<br>Experts</a>
-            <a class="navigation-block__link" href="#">Industries</a>
-            <a class="navigation-block__link" href="#">Video Testimonials</a>
-          </div>
-          <div class="navigation-block">
-            <p class="navigation-block__text">Company</p>
-            <a class="navigation-block__link" href="#">About us</a>
-            <a class="navigation-block__link" href="#">Carrers</a>
-            <a class="navigation-block__link" href="#">Pricing</a>
-            <a class="navigation-block__link" href="#">Case studies</a>
-            <a class="navigation-block__link" href="#">Sales tools</a>
-            <a class="navigation-block__link" href="#">Contact us</a>
-          </div>
-          <div class="navigation-block">
-            <p class="navigation-block__text">Resourses</p>
-            <a class="navigation-block__link" href="#">Blog</a>
-            <a class="navigation-block__link" href="#">How to Guides</a>
-            <a class="navigation-block__link" href="#">Belins Growth<br>Podcast</a>
-            <a class="navigation-block__link" href="#">Help Center</a>
-          </div>
-          <div class="navigation-block">
-            <p class="navigation-block__text">Products</p>
-            <a class="navigation-block__link" href="#">Folderly</a>
-            <a class="navigation-block__link" href="#">Leadsforce</a>
-            <a class="navigation-block__link" href="#">Wordstir</a>
-          </div>
-        </div>
+        <span class="navigation-block">
+          <div><p class="navigation-block__text">Solutions</p></div>
+          <div><a class="navigation-block__link" href="#">Appointment Setting</a></div>
+          <div><a class="navigation-block__link" href="#">Inbound Appointment<br>Setting</a></div>
+          <div><a class="navigation-block__link" href="#">Lead Research</a></div>
+          <div><a class="navigation-block__link" href="#">The LinkedIn Influencer<br>Program</a></div>
+        </span>
+        <span class="navigation-block">
+          <div><p class="navigation-block__text">How it works</p></div>
+          <div><a class="navigation-block__link" href="#">Belkins Approach</a></div>
+          <div><a class="navigation-block__link" href="#">Our Account Manager</a></div>
+          <div><a class="navigation-block__link" href="#">Our Template Writer</a></div>
+          <div><a class="navigation-block__link" href="#">Our Lead Research<br>Specialist</a></div>
+          <div><a class="navigation-block__link" href="#">Our SDR</a></div>
+          <div><a class="navigation-block__link" href="#">Our Email Deliverability<br>Experts</a></div>
+          <div><a class="navigation-block__link" href="#">Industries</a></div>
+          <div><a class="navigation-block__link" href="#">Video Testimonials</a></div>
+        </span>
+        <span class="navigation-block">
+          <div><p class="navigation-block__text">Company</p></div>
+          <div><a class="navigation-block__link" href="#">About us</a></div>
+          <div><a class="navigation-block__link" href="#">Carrers</a></div>
+          <div><a class="navigation-block__link" href="#">Pricing</a></div>
+          <div><a class="navigation-block__link" href="#">Case studies</a></div>
+          <div><a class="navigation-block__link" href="#">Sales tools</a></div>
+          <div><a class="navigation-block__link" href="#">Contact us</a></div>
+        </span>
+        <span class="navigation-block">
+          <div><p class="navigation-block__text">Resourses</p></div>
+          <div><a class="navigation-block__link" href="#">Blog</a></div> 
+          <div><a class="navigation-block__link" href="#">How to Guides</a></div>
+          <div><a class="navigation-block__link" href="#">Belins Growth<br>Podcast</a></div>
+          <div><a class="navigation-block__link" href="#">Help Center</a></div>
+        </span>
+        <span class="navigation-block">
+          <div><p class="navigation-block__text">Products</p></div>
+          <div><a class="navigation-block__link" href="#">Folderly</a></div>
+          <div><a class="navigation-block__link" href="#">Leadsforce</a></div>
+          <div><a class="navigation-block__link" href="#">Wordstir</a></div>
+        </span>
       </div>
       <div class="bottom">
         <div class="social-links">
