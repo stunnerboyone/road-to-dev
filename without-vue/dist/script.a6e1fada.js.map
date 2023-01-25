@@ -1,1 +1,0 @@
-{"version":3,"sources":["scripts/script.js"],"names":["$","document","ready","slick"],"mappings":"AAAAA,CAAC,CAACC,QAAQ,CAAC,CAACC,KAAK,CAAC,YAAU;EACxBF,CAAC,CAAC,SAAS,CAAC,CAACG,KAAK,EAAE;AACxB,CAAC,CAAC","file":"script.a6e1fada.js","sourceRoot":"..","sourcesContent":["$(document).ready(function(){\r\n    $('.slider').slick();\r\n});"]}
