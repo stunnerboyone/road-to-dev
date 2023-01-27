@@ -130,6 +130,11 @@ body {
   color: #ff5e00;
 }
 
+.item__menu {
+  display: flex;
+  align-items: center;
+}
+
 .header {
   position: fixed;
   top: 0;
@@ -162,15 +167,13 @@ body {
 .header-navigation__item {
   margin-left: 24px;
 }
+.header-navigation__button {
+  margin-left: 16px;
+}
 .header-navigation__img {
   width: 16px;
   height: 16px;
   margin-left: 4px;
-}
-
-.item__menu {
-  display: flex;
-  align-items: center;
 }
 
 .flexible-block {
@@ -178,19 +181,31 @@ body {
   margin: auto;
 }
 
-.header-button {
-  margin-left: 16px;
-}
-
 .partners {
   max-height: 80px;
   overflow: hidden;
 }
 
-.home-block {
-  max-width: 1344px;
-  padding: 156px 16px 96px;
-  margin: auto;
+.home-screen {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 72px;
+  margin-bottom: 96px;
+}
+.home-screen__img {
+  width: 640px;
+  height: 480px;
+  margin-top: 80px;
+}
+
+.schedule-a-meeting {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 160px 0 80px;
+}
+.schedule-a-meeting__button {
+  max-width: 256px;
 }
 
 .how-it-works {

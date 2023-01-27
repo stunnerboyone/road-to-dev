@@ -164,6 +164,13 @@ body {
   }
 }
 
+.item {
+  &__menu{
+    display: flex;
+    align-items:center;
+  }
+}
+
 .header {
   position: fixed;
   top: 0;
@@ -195,17 +202,13 @@ body {
   &__item {
     margin-left: 24px;
   }
+  &__button{
+    margin-left: 16px;
+  }
   &__img {
     width: 16px;
     height: 16px;
     margin-left: 4px;
-  }
-}
-
-.item {
-  &__menu{
-    display: flex;
-    align-items:center;
   }
 }
 
@@ -214,19 +217,32 @@ body {
   margin: auto;
 }
 
-.header-button {
-  margin-left: 16px;
-}
-
 .partners {
   max-height: 80px;
   overflow: hidden;
 }
 
-.home-block {
-  max-width: 1344px;
-  padding: 156px 16px 96px;
-  margin: auto;
+.home-screen {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 72px;
+  margin-bottom: 96px;
+  &__img{
+    width: 640px;
+    height: 480px;
+    margin-top: 80px;
+  }
+}
+
+.schedule-a-meeting {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 160px 0 80px;
+  &__button {
+    max-width: 256px;
+
+  }
 }
 
 .how-it-works {
