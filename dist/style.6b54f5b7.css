@@ -14,10 +14,10 @@ body {
 }
 
 .button__primary {
-  border-radius: 6px;
   align-items: center;
   background-color: #ff5e00;
   color: #fff;
+  border-radius: 6px;
   border: none;
 }
 .button__circkle {
@@ -82,7 +82,6 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 28px;
-  color: #3d3d3d;
 }
 .text__small {
   font-weight: 500;
@@ -104,10 +103,18 @@ body {
   font-size: 14px;
   line-height: 24px;
 }
+.text__xtra-bold {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+}
 .text__name {
   font-weight: 600;
   font-size: 18px;
   line-height: 28px;
+}
+.text__black {
+  color: #3d3d3d;
 }
 .text__gray {
   color: #b8b8b8;
@@ -116,13 +123,11 @@ body {
   color: #fff;
 }
 
-.button-text {
-  color: #3d3d3d;
+.link {
+  text-decoration: none;
 }
-.button-text__large {
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 24px;
+.link :hover {
+  color: #ff5e00;
 }
 
 .header {
@@ -144,44 +149,37 @@ body {
   padding: 16px 64px;
 }
 
-.header-logo {
-  width: 90px;
+.logo {
+  width: 100px;
   height: 32px;
   margin-right: 16px;
 }
 
 .header-navigation {
+  display: flex;
   max-height: 50px;
 }
-
 .header-navigation__item {
   margin-left: 24px;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 24px;
-  color: #3d3d3d;
 }
-.header-navigation__item .header-navigation__img {
-  vertical-align: text-bottom;
-  margin-left: 2px;
+.header-navigation__img {
+  width: 16px;
+  height: 16px;
+  margin-left: 4px;
 }
 
-.header-navigation__link {
-  margin-left: 24px;
-  text-decoration: none;
-  color: #3d3d3d;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 24px;
-}
-
-.header-navigation__link:hover {
-  color: #ff5e00;
+.item__menu {
+  display: flex;
+  align-items: center;
 }
 
 .flexible-block {
   width: auto;
   margin: auto;
+}
+
+.header-button {
+  margin-left: 16px;
 }
 
 .partners {
