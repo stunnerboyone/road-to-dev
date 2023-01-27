@@ -3,11 +3,12 @@
 $typography-grey: #b8b8b8;
 $white: #fff;
 $orange: #ff5e00;
+$palette-orange: #FAC09E;
 $main-gray: #3d3d3d;
 $typography-headings: #292929;
 $main-dark: #292929;
 $typography-light-grey: #e0e0e0;
-$palette-grey: #fbfbfb;
+$palette-grey: #ccc;
 $typography-dark-gray: #666;
 
 body {
@@ -15,11 +16,158 @@ body {
   font-style: normal;
 }
 
+.conteiner{
+  position: relative;
+  max-width: 1344px;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.button {
+  &__primary {
+    border-radius: 6px;
+    align-items:center;
+    background-color: $orange;
+    color: $white;
+    border: none;
+  }
+
+  &__circkle {
+    vertical-align: bottom;
+    width: 56px;
+    height: 56px;
+    background-color: $white;
+    border-radius: 50%;
+    border: 1px solid $palette-orange
+  }
+
+  &__outline {
+    border-radius: 6px;
+    align-items:baseline;
+    background-color: $white;
+    border: 1px solid #ccc;
+  }
+
+  &__medium {
+    padding: 8px 20px;
+    height: 40px;
+  }
+
+  &__large {
+    padding: 16px 24px;
+  }
+
+  &__arrow-right {
+    display:flex;
+    justify-content: space-between;
+  }
+}
+
+
+.tittle {
+  margin: 0;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 56px;
+
+  &__small {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  &__large {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 48px;
+  }
+
+  &__xtra-large {
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 64px;
+  }
+
+  &__black {
+    color: $typography-headings;
+  }
+
+  &__orange {
+    color: $orange;
+  }
+
+  &__gray {
+    color: $palette-grey;
+  }
+}
+
+.text {
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: $main-gray;
+
+
+  &__small {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  &__large {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+  }
+
+  &__tiny {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  &__bold {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  &__name {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  &__gray {
+    color: $typography-grey;
+  }
+
+  &__white {
+    color: $white;
+  }
+}
+
+.button-text{
+  &__small {}
+  &__medium {}
+  &__large {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+  }
+  
+  color: $main-gray;
+}
+
 .header {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
+  z-index: 2;
   min-height: 72px;
   box-shadow: 8px 16px 32px rgb(0 0 0 / 3%);
   background-color: $white;
@@ -36,7 +184,7 @@ body {
 .header-logo {
   width: 90px;
   height: 32px;
-  margin-right:16px;
+  margin-right: 16px;
 }
 
 .header-navigation {
@@ -68,76 +216,137 @@ body {
   color: $orange;
 }
 
-.flexible-block{
-  width:auto;
+.flexible-block {
+  width: auto;
   margin: auto;
 }
 
-.button__outline {
-  width: 115px;
-  height: 40px;
-  box-sizing: border-box;
-  background-color: $white;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-}
 
-.button__primary {
-  width: 115px;
-  height: 40px;
-  background-color: $orange;
-  color: $white;
-  border-radius: 6px;
-  border: none;
-}
-
-.partners{
+.partners {
   max-height: 80px;
-  overflow:hidden;
+  overflow: hidden;
 }
 
-.home-block{
+.home-block {
   max-width: 1344px;
-  padding: 156px 16px 96px 16px;
+  padding: 156px 16px 96px;
   margin: auto;
 }
 
-.how-it-works{
+.how-it-works {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   max-width: 1344px;
   margin: 160px auto;
+  padding: 0 16px;
 }
 
-.how-it-works__button {
-  padding: 16px 16px 16px 24px;
-  background-color: $orange;
-  color: $white;
-  border-radius: 6px;
-  border: none;
+.how-it-works__heading{
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 56px;
+  color: $typography-headings;
+}
+
+.steps{
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+
+.step {
+  display: flex;
+  align-items: center;
+  padding: 48px 0;
+  border-bottom: 1px solid $typography-light-grey;
+}
+
+.step__number {
+  margin: 0;
+  padding-right: 32px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+  color: $palette-grey
+}
+
+.step__heading {
+  margin: 0;
+  padding: 0 131px 0 32px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+  color: $palette-grey
+}
+
+.step__text {
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: 60px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: $typography-grey
+}
+
+.brian-hicks {
+  &__container{
+    margin-top: 160px;
+  }
+  &__tittle{
+    margin-bottom: 160px;
+  }
+}
+
+.brian-hicks-interview {
+  display: flex;
+  justify-content: space-around;
+  max-height: 588px;
+}
+
+.interview-photo{
+  max-height: 560;
+  padding: 0 32px;
+}
+
+.interview-content {
+  padding: 32px;
+  &__tittle {
+    margin: 32px 0;
+  }
+}
+
+.explore-service {
+  display: flex;
+  align-items:baseline;
+  justify-content: space-between;
+  max-width: 225px;
+  margin-top: 32px;
 }
 
 .footer {
   max-width: 1440px;
+  width: 100%;
   margin: auto;
   padding: 56px 64px 40px;
 }
 
 .footer-top {
   display: flex;
-  margin-bottom: 64px; 
+  margin-bottom: 64px;
 }
 
-.footer-contacts{
+.footer-contacts {
   margin: 62px 0;
 }
 
 .footer-contacts__link {
-  a{
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 28px;
-    color: $typography-grey;
-    text-decoration: none;
-  }
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 28px;
+  color: $typography-grey;
+  text-decoration: none;
 }
 
 .navigation-block {
@@ -145,11 +354,11 @@ body {
   max-height: 50px;
 }
 
-.navigation-block__text{
+.navigation-block__text {
   font-weight: 600;
   font-size: 14px;
   line-height: 24px;
-  margin: 0 0 8px 0;
+  margin: 0 0 8px;
 }
 
 .navigation-block__link {
@@ -171,22 +380,22 @@ body {
   align-items: center;
 }
 
-.policy{
+.policy {
   margin-left: 203px;
 }
 
-.belkins-right__text{
+.belkins-right__text {
   font-weight: 500;
   font-size: 12px;
   line-height: 16px;
   color: $typography-grey;
 }
-.policy__link{
-  margin-left:35px;
+
+.policy__link {
+  margin-left: 35px;
   font-weight: 500;
   font-size: 12px;
   line-height: 16px;
   color: $typography-grey;
   text-decoration: none;
 }
-

@@ -4,43 +4,49 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="./node_modules/normalize.css/normalize.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./node_modules/normalize.css/normalize.css"
+    />
     <link rel="stylesheet" type="text/css" href="./css/style.scss" />
     <title>Appointment-Setting</title>
   </head>
   <body>
     <header class="header">
-      <div class="header-conteiner">
-        <div class="header-logo">
+      <div class="header-body">
+        <div class="logo-header logo">
           <img src="./ui/Group86.png" weight="81" height="25,5" alt="Belkins" />
         </div>
         <div class="header-navigation">
-          <span class="header-navigation__item">
-              What We Do
-              <img class = "header-navigation__img" src="./ui/ArrowDown.png" />
-          </span>
-          <span class="header-navigation__item">
-              Customer Success
-              <img class = "header-navigation__img" src="./ui/ArrowDown.png" />
-          </span>
-          <span class="header-navigation__item">
-            Resources 
-            <img class = "header-navigation__img" src="./ui/ArrowDown.png" />
-          </span>
-          <span class="header-navigation__item">
-              Company 
-              <img class = "header-navigation__img" src="./ui/ArrowDown.png" />
-          </span>
-          <a class="header-navigation__link" href="#">Pricing</a>
+          <div class="navigation-item">
+            <p class="navigation-item__text">What We Do</p>
+            <img class="navigation-item__img" src="./ui/ArrowDown.png" />
+          </div>
+          <div class="navigation-item">
+            <p class="navigation-item__text">Customer Success</p>
+            <img class="navigation-item__img" src="./ui/ArrowDown.png" />
+          </div>
+          <div class="navigation-item">
+            <p class="navigation-item__text">Resources</p>
+            <img class="navigation-item__img" src="./ui/ArrowDown.png" />
+          </div>
+          <div class="navigation-item">
+            <p class="navigation-item__text">Company</p>
+            <img class="navigation-item__img" src="./ui/ArrowDown.png" />
+          </div>
+          <div class="navigation-item">
+            <a class="navigation-item__link" href="#">Pricing</a>
+          </div>
         </div>
         <div class="flexible-block"></div>
         <div class="header-button">
-          <button class="button button__outline">Contact Us</button>
-          <button class="button button__primary">Book a Call</button>
+          <button class="button button__outline button__medium">Contact Us</button>
+          <button class="button button__primary button__medium">Book a Call</button>
         </div>
-      </d>
+      </div>
     </header>
-    <div class="home-block">
+    <div class="conteiner">
       <div class="schedule-a-meeting">
         <div>
           <h1>B2B Appointment <br />Serring Services</h1>
@@ -49,292 +55,368 @@
             <br />your business
           </p>
         </div>
-        <button>
-          Schedule a meeting <img src="./ui/Vector.png" alt="" />
+        <button class="button button__primary button__arrow-right button--large">
+          Schedule a meeting
+          <img class="button__image" src="./ui/Vector.png" alt="" />
         </button>
       </div>
-      <div class="calendar"></div>
+      <div class="calendar">
+        <img src="./ui/Appointment setting 1.png" alt="calendar">
+      </div>
     </div>
     <div class="partners">
-          <img src="./ui/Partners/Size=80px, Company=Ami, State=Default.png" />
-          <img
-            src="./ui/Partners/Size=80px, Company=Apex Logistics, State=Default.png"
-            alt=""
-          />
-          <img
-            src="./ui/Partners/Size=80px, Company=Berkeley, State=Default.png"
-            alt=""
-          />
-          <img
-            src="./ui/Partners/Size=80px, Company=BioSistemika, State=Default.png"
-            alt=""
-          />
-          <img
-            src="./ui/Partners/Size=80px, Company=Born&Bread, State=Default.png"
-            alt=""
-          />
-          <img
-            src="./ui/Partners/Size=80px, Company=Cemtrex, State=Default.png"
-            alt=""
-          />
-          <img
-            src="./ui/Partners/Size=80px, Company=Cisco, State=Default.png"
-            alt=""
-          />
-          <img
-            src="./ui/Partners/Size=80px, Company=Citcon, State=Default.png"
-            alt=""
-          />
-          <img
-            src="./ui/Partners/Size=80px, Company=CitrusAd, State=Default.png"
-            alt=""
-          />
-          <img
-            src="./ui/Partners/Size=80px, Company=Columbia Chamber, State=Default.png"
-            alt=""
-          />
-          <img
-            src="./ui/Partners/Size=80px, Company=DecisionPoint, State=Default.png"
-            alt=""
-          />
-          <img
-            src="./ui/Partners/Size=80px, Company=Digital Knights, State=Default.png"
-            alt=""
-          />
-          <img
-            src="./ui/Partners/Size=80px, Company=Ebanx, State=Default.png"
-            alt=""
-          />
-          <img
-            src="./ui/Partners/Size=80px, Company=FlexTime, State=Default.png"
-            alt=""
-          />
-          <img
-            src="./ui/Partners/Size=80px, Company=GoHealth, State=Default-1.png"
-            alt=""
-          />
-          <img
-            src="./ui/Partners/Size=80px, Company=Helios Energy, State=Default.png"
-            alt=""
-          />
-          <img
-            src="./ui/Partners/Size=80px, Company=Hi Bob, State=Default.png"
-            alt=""
-          />
-          <img
-            src="./ui/Partners/Size=80px, Company=iDeals, State=Default.png"
-            alt=""
-          />
-          <img
-            src="./ui/Partners/Size=80px, Company=Koda, State=Default.png"
-            alt=""
-          />
-          <img
-            src="./ui/Partners/Size=80px, Company=Lisnr, State=Default.png"
-            alt=""
-          />
-          <img
-            src="./ui/Partners/Size=80px, Company=Lunu, State=Default.png"
-            alt=""
-          />
-          <img
-            src="./ui/Partners/Size=80px, Company=Mindstrong, State=Default.png"
-            alt=""
-          />
-          <img
-            src="./ui/Partners/Size=80px, Company=Mole Street, State=Default.png"
-            alt=""
-          />
-          <img
-            src="./ui/Partners/Size=80px, Company=Mona, State=Default.png"
-            alt=""
-          />
-          <img
-            src="./ui/Partners/Size=80px, Company=Omnicharge, State=Default.png"
-            alt=""
-          />
-          <img
-            src="./ui/Partners/Size=80px, Company=Ordway Labs, State=Default.png"
-            alt=""
-          />
-          <img
-            src="./ui/Partners/Size=80px, Company=OTH, State=Default.png"
-            alt=""
-          />
-          <img
-            src="./ui/Partners/Size=80px, Company=Reply, State=Default.png"
-            alt=""
-          />
-          <img
-            src="./ui/Partners/Size=80px, Company=Shelby W, State=Default.png"
-            alt=""
-          />
-          <img
-            src="./ui/Partners/Size=80px, Company=SimplyNuc, State=Default.png"
-            alt=""
-          />
-          <img
-            src="./ui/Partners/Size=80px, Company=Smappee, State=Default.png"
-            alt=""
-          />
-          <img
-            src="./ui/Partners/Size=80px, Company=Smartrek, State=Default.png"
-            alt=""
-          />
-          <img
-            src="./ui/Partners/Size=80px, Company=Texas Association, State=Default.png"
-            alt=""
-          />
-          <img
-            src="./ui/Partners/Size=80px, Company=Token, State=Default.png"
-            alt=""
-          />
-          <img
-            src="./ui/Partners/Size=80px, Company=UniFocus, State=Default.png"
-            alt=""
-          />
-          <img
-            src="./ui/Partners/Size=80px, Company=WSI, State=Default.png"
-            alt=""
-          />
+      <img src="./ui/Partners/Size=80px, Company=Ami, State=Default.png" />
+      <img
+        src="./ui/Partners/Size=80px, Company=Apex Logistics, State=Default.png"
+        alt=""
+      />
+      <img
+        src="./ui/Partners/Size=80px, Company=Berkeley, State=Default.png"
+        alt=""
+      />
+      <img
+        src="./ui/Partners/Size=80px, Company=BioSistemika, State=Default.png"
+        alt=""
+      />
+      <img
+        src="./ui/Partners/Size=80px, Company=Born&Bread, State=Default.png"
+        alt=""
+      />
+      <img
+        src="./ui/Partners/Size=80px, Company=Cemtrex, State=Default.png"
+        alt=""
+      />
+      <img
+        src="./ui/Partners/Size=80px, Company=Cisco, State=Default.png"
+        alt=""
+      />
+      <img
+        src="./ui/Partners/Size=80px, Company=Citcon, State=Default.png"
+        alt=""
+      />
+      <img
+        src="./ui/Partners/Size=80px, Company=CitrusAd, State=Default.png"
+        alt=""
+      />
+      <img
+        src="./ui/Partners/Size=80px, Company=Columbia Chamber, State=Default.png"
+        alt=""
+      />
+      <img
+        src="./ui/Partners/Size=80px, Company=DecisionPoint, State=Default.png"
+        alt=""
+      />
+      <img
+        src="./ui/Partners/Size=80px, Company=Digital Knights, State=Default.png"
+        alt=""
+      />
+      <img
+        src="./ui/Partners/Size=80px, Company=Ebanx, State=Default.png"
+        alt=""
+      />
+      <img
+        src="./ui/Partners/Size=80px, Company=FlexTime, State=Default.png"
+        alt=""
+      />
+      <img
+        src="./ui/Partners/Size=80px, Company=GoHealth, State=Default-1.png"
+        alt=""
+      />
+      <img
+        src="./ui/Partners/Size=80px, Company=Helios Energy, State=Default.png"
+        alt=""
+      />
+      <img
+        src="./ui/Partners/Size=80px, Company=Hi Bob, State=Default.png"
+        alt=""
+      />
+      <img
+        src="./ui/Partners/Size=80px, Company=iDeals, State=Default.png"
+        alt=""
+      />
+      <img
+        src="./ui/Partners/Size=80px, Company=Koda, State=Default.png"
+        alt=""
+      />
+      <img
+        src="./ui/Partners/Size=80px, Company=Lisnr, State=Default.png"
+        alt=""
+      />
+      <img
+        src="./ui/Partners/Size=80px, Company=Lunu, State=Default.png"
+        alt=""
+      />
+      <img
+        src="./ui/Partners/Size=80px, Company=Mindstrong, State=Default.png"
+        alt=""
+      />
+      <img
+        src="./ui/Partners/Size=80px, Company=Mole Street, State=Default.png"
+        alt=""
+      />
+      <img
+        src="./ui/Partners/Size=80px, Company=Mona, State=Default.png"
+        alt=""
+      />
+      <img
+        src="./ui/Partners/Size=80px, Company=Omnicharge, State=Default.png"
+        alt=""
+      />
+      <img
+        src="./ui/Partners/Size=80px, Company=Ordway Labs, State=Default.png"
+        alt=""
+      />
+      <img
+        src="./ui/Partners/Size=80px, Company=OTH, State=Default.png"
+        alt=""
+      />
+      <img
+        src="./ui/Partners/Size=80px, Company=Reply, State=Default.png"
+        alt=""
+      />
+      <img
+        src="./ui/Partners/Size=80px, Company=Shelby W, State=Default.png"
+        alt=""
+      />
+      <img
+        src="./ui/Partners/Size=80px, Company=SimplyNuc, State=Default.png"
+        alt=""
+      />
+      <img
+        src="./ui/Partners/Size=80px, Company=Smappee, State=Default.png"
+        alt=""
+      />
+      <img
+        src="./ui/Partners/Size=80px, Company=Smartrek, State=Default.png"
+        alt=""
+      />
+      <img
+        src="./ui/Partners/Size=80px, Company=Texas Association, State=Default.png"
+        alt=""
+      />
+      <img
+        src="./ui/Partners/Size=80px, Company=Token, State=Default.png"
+        alt=""
+      />
+      <img
+        src="./ui/Partners/Size=80px, Company=UniFocus, State=Default.png"
+        alt=""
+      />
+      <img
+        src="./ui/Partners/Size=80px, Company=WSI, State=Default.png"
+        alt=""
+      />
     </div>
     <div class="how-it-works">
-        <h1>How It Works</h1>
-        <div class="steps">
-          <div class="step">
-            <h2>01</h2>
-            <h2>Campaign Outline</h2>
-            <p>
+      <div class="conteiner">
+        <h1 class = "how-it-works__heading">How It Works</h1>
+        <ol class="steps">
+          <li class="step">
+            <h2 class="step__number">01</h2>
+            <h2 class="step__heading">Campaign Outline</h2>
+            <p class="step__text">
               Meet the team of experts who will dig deep into your<br />business
               and develop a customized outreach. We create<br />professional
-              marketing campaigns based on your ICP,<br />unique value
+              marketing campaigns based on your ICP, unique<br /> value
               proposition, and market research.
             </p>
-          </div>
-          <div class="step">
-            <h2>02</h2>
-            <h2>Audience Building</h2>
-            <p>
+          </li>
+          <li class="step">
+            <h2 class="step__number">02</h2>
+            <h2 class="step__heading">Audience Building</h2>
+            <p class="step__text">
               Our Data Mining experts will help you define the crucial criteria
               to<br />qualify the right leads who perfectly match your ICP. We
-              conduct<br />thorough audience research and access hundreds of
-              data sources to<br />maximize your ROI.
+              conduct<br />thorough audience research and access hundreds of data
+              sources to<br />maximize your ROI.
             </p>
-          </div>
-          <div class="step">
-            <h2>03</h2>
-            <h2>Target outreach</h2>
-            <p>
-              Our experts design customized templates to win the hearts of
-              your<br />ideal prospects and set up more appointments as a
-              result. The 100%<br />email delivery and 0% spam rate mission is
-              more than possible for<br />Belkins team.
+          </li>
+          <li class="step">
+            <h2 class="step__number">03</h2>
+            <h2 class="step__heading">Target outreach</h2>
+            <p class="step__text">
+              Our experts design customized templates to win the hearts of your<br />ideal
+              prospects and set up more appointments as a result. The 100%<br />email
+              delivery and 0% spam rate mission is more than possible for<br />Belkins
+              team.
             </p>
-          </div>
-          <div class="step">
-            <h2>04</h2>
-            <h2>Appointment Setting</h2>
-            <p>
+          </li>
+          <li class="step">
+            <h2 class="step__number">04</h2>
+            <h2 class="step__heading">Appointment Setting</h2>
+            <p class="step__text">
               Our B2B appointment setting services include filling your
               calendar<br />with meetings that are likely to convert into sales.
               Our SDRs always<br />make sure that the leads confirm the
               appointments and reschedule<br />the calls beforehand if needed.
             </p>
+          </li>
+        </ol>
+        <button class="button__primary">
+          <span class="button__text">Book a free consultation</span>
+          <span
+            ><img class="button__image" src="./ui/Vector.png" alt=">"
+          /></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="brian-hicks">
+      <div class="brian-hicks__container conteiner">
+        <h1 class="brian-hicks__tittle tittle__xtra-large tittle__orange">From startups to enterprises.</h1>
+        <div class="brian-hicks-interview">
+          <div class="interview-photo"><img src="./ui/Photo/Frame 17710.png" alt="Brian Hicks" class="brien-hicks__photo"></div>
+          <div class="interview-content content">
+            <p class="text button-text__large ">
+              Brian Hicks <span class="text text__large text__gray">Snr. Sales Exacutive</span>
+            </p>
+            <h2 class="interview-content__tittle tittle tittle__large tittle__black ">
+              The sales journey is too<br>complex not to have us<br>on your side.
+            </h2>
+            <p class="text text__black">
+              More than 40% of salespeople report that the most challenging part<br>
+              of the sales process is prospecting. Outbound prospecting has been<br>
+              the only thing we've done since 2015. Our team of experts take care<br>
+              of the entire process all the way to setting qualified appointments<br>
+              with your team! We have this dialed in at Belkins and you don't need<br>
+              to make the mistakes that most do by trying to tackle this on your<br>
+              own.
+            </p>
+            <div class="explore-service">
+              <button class="button__circkle">
+                <img src="./ui/Arrows/Vector.png" alt="">
+              </button>
+              <p class="text text__name">Explore Service</p>
+            </div>
           </div>
         </div>
-        <div>
-          <button class="how-it-works__button">
-            Book a free consultation <img src="./ui/Vector.png" alt=">" />
+      </div>
+    </div>
+
+
+    <div class="cta-form">
+      <div class="cta-form__conteiner conteiner">
+        <div class="cta-info info">
+          <h1 class="cta-form__heading heading">
+            Contact Us to Begin<br />Your Outbound Jorney
+          </h1>
+          <p class="cta-form__text">
+            If you're looking to take your sales to the next level and kick the
+            demand for<br />your product or service into gear - a call with our
+            team is great place to start.
+          </p>
+          <button class="button__primary arrow-right">
+            <div class="button__text">Get in Touch</div>
+            <div><img class="button__image" src="./ui/Vector.png" alt=">"/></div>
           </button>
         </div>
-    </div>
-    <div class="cta-form">
-        <div class="info">
-          <div class="contacts">
-            <div class="content">
-              <h3>Contact Us to Begin<br />Your Outbound Jorney</h3>
-              <p>
-                If you're looking to take your sales to the next level and kick
-                the demand for<br />your product or service into gear - a call
-                with our team is great place to start.
-              </p>
-              <button>Get in Touch <img src="./ui/Vector.png" alt=">"</button>
-            </div>
-            <div class="statistic">
-              <h3>With Belkins Today<br />Your Business:</h3>
-              <div class="items">
-                <div class="point">
-                  <div class="value">25%</div>
-                  <div class="dot"></div>
-                  <div class="name">
-                    Average closing rate<br />across 25 industries
-                  </div>
-                </div>
-                <div class="point">
-                  <div class="value">10:1</div>
-                  <div class="dot"></div>
-                  <div class="name">
-                    $10 dollar return per $1<br />invested in this channel
-                  </div>
-                </div>
-                <div class="point">
-                  <div class="value">10</div>
-                  <div class="dot"></div>
-                  <div class="name">
-                    Appointment booked<br />per Campaign per mounth
-                  </div>
-                </div>
-              </div>
-            </div>
+        <div class="cta-statistic">
+          <h3 class="cta-statistic__title">
+            With Belkins Today<br />Your Business:
+          </h3>
+          <div class="cta-statistic__item">
+            <span class="cta-statistic__value">25%</span>
+            <span class="cta-statistic__dot"></span>
+            <span class="cta-statistic__name">Average closing rate<br />across 25 industries</span>
           </div>
-          <div class="awards">
-            <p class = "awards__text">Award-winning B2B Lead Generation Agency</p>
-            <div class="awards-logo">
-              <img class="awards-logo__img"src="./ui/Awards/Award.png" />
-              <img class="awards-logo__img"src="./ui/Awards/Award-1.png" />
-              <img class="awards-logo__img"src="./ui/Awards/Award-2.png" />
-              <img class="awards-logo__img"src="./ui/Awards/Award-3.png" />
-              <img class="awards-logo__img"src="./ui/Awards/Award-4.png" />
-              <img class="awards-logo__img"src="./ui/Awards/Award-5.png" />
-            </div>
+          <div class="cta-statistic__item">
+            <span class="cta-statistic__value">10:1</span>
+            <span class="cta-statistic__dot"></span>
+            <span class="cta-statistic__name">
+              $10 dollar return per $1<br />invested in this channel
+            </span>
+          </div>
+          <div class="cta-statistic__items">
+            <span class="cta-statistic__value">10</span>
+            <span class="cta-statistic__dot"></span>
+            <span class="cta-statistic__name">
+              Appointment booked<br />per Campaign per mounth
+            </span>
           </div>
         </div>
+      </div>
+      <div class="awards">
+        <p class="awards__text">Award-winning B2B Lead Generation Agency</p>
+        <div class="awards__icons">
+          <img class="awards-logos__img" src="./ui/Awards/Award.png" />
+          <img class="awards-logos__img" src="./ui/Awards/Award-1.png" />
+          <img class="awards-logos__img" src="./ui/Awards/Award-2.png" />
+          <img class="awards-logos__img" src="./ui/Awards/Award-3.png" />
+          <img class="awards-logos__img" src="./ui/Awards/Award-4.png" />
+          <img class="awards-logos__img" src="./ui/Awards/Award-5.png" />
+        </div>
+      </div>
     </div>
     <footer class="footer">
       <div class="footer-top">
         <div class="conteiner-info">
-          <div class="conteiner-info__logo">
-            <img src="./ui/Group86.png" alt="logo" weight="90" height="32" />
+          <div>
+            <img class="conteiner-info__logo" src="./ui/Group86.png" alt="logo" weight="90" height="32" />
           </div>
           <div class="footer-contacts">
-            <div class="footer-contacts__link"><a href="tel:+1 302-803-5506" class="link">+1 302-803-5506</a></div>
-            <div class="footer-contacts__link"><a href="mailto:sales@belkins.io" class="link">sales@belkins.io</a></div>
-            <div class="footer-contacts__link"><a href="mailto:press@belkins.io" class="link">press@belkins.io</a></div>
+            <div>
+              <a class="footer-contacts__link" href="tel:+1 302-803-5506" class="link">+1 302-803-5506</a>
+            </div>
+            <div>
+              <a class="footer-contacts__link" href="mailto:sales@belkins.io" class="link"
+                >sales@belkins.io</a
+              >
+            </div>
+            <div>
+              <a class="footer-contacts__link" href="mailto:press@belkins.io" class="link"
+                >press@belkins.io</a
+              >
+            </div>
           </div>
           <div class="google-partner">
-            <img
-              src="./ui/google-partner-log.png"
-              alt="google"
-            />
+            <img src="./ui/google-partner-log.png" alt="google" />
           </div>
         </div>
         <span class="navigation-block">
           <div><p class="navigation-block__text">Solutions</p></div>
-          <div><a class="navigation-block__link" href="#">Appointment Setting</a></div>
-          <div><a class="navigation-block__link" href="#">Inbound Appointment<br>Setting</a></div>
-          <div><a class="navigation-block__link" href="#">Lead Research</a></div>
-          <div><a class="navigation-block__link" href="#">The LinkedIn Influencer<br>Program</a></div>
+          <div>
+            <a class="navigation-block__link" href="#">Appointment Setting</a>
+          </div>
+          <div>
+            <a class="navigation-block__link" href="#"
+              >Inbound Appointment<br />Setting</a
+            >
+          </div>
+          <div>
+            <a class="navigation-block__link" href="#">Lead Research</a>
+          </div>
+          <div>
+            <a class="navigation-block__link" href="#"
+              >The LinkedIn Influencer<br />Program</a
+            >
+          </div>
         </span>
         <span class="navigation-block">
           <div><p class="navigation-block__text">How it works</p></div>
-          <div><a class="navigation-block__link" href="#">Belkins Approach</a></div>
-          <div><a class="navigation-block__link" href="#">Our Account Manager</a></div>
-          <div><a class="navigation-block__link" href="#">Our Template Writer</a></div>
-          <div><a class="navigation-block__link" href="#">Our Lead Research<br>Specialist</a></div>
+          <div>
+            <a class="navigation-block__link" href="#">Belkins Approach</a>
+          </div>
+          <div>
+            <a class="navigation-block__link" href="#">Our Account Manager</a>
+          </div>
+          <div>
+            <a class="navigation-block__link" href="#">Our Template Writer</a>
+          </div>
+          <div>
+            <a class="navigation-block__link" href="#"
+              >Our Lead Research<br />Specialist</a
+            >
+          </div>
           <div><a class="navigation-block__link" href="#">Our SDR</a></div>
-          <div><a class="navigation-block__link" href="#">Our Email Deliverability<br>Experts</a></div>
+          <div>
+            <a class="navigation-block__link" href="#"
+              >Our Email Deliverability<br />Experts</a
+            >
+          </div>
           <div><a class="navigation-block__link" href="#">Industries</a></div>
-          <div><a class="navigation-block__link" href="#">Video Testimonials</a></div>
+          <div>
+            <a class="navigation-block__link" href="#">Video Testimonials</a>
+          </div>
         </span>
         <span class="navigation-block">
           <div><p class="navigation-block__text">Company</p></div>
@@ -347,9 +429,15 @@
         </span>
         <span class="navigation-block">
           <div><p class="navigation-block__text">Resourses</p></div>
-          <div><a class="navigation-block__link" href="#">Blog</a></div> 
-          <div><a class="navigation-block__link" href="#">How to Guides</a></div>
-          <div><a class="navigation-block__link" href="#">Belins Growth<br>Podcast</a></div>
+          <div><a class="navigation-block__link" href="#">Blog</a></div>
+          <div>
+            <a class="navigation-block__link" href="#">How to Guides</a>
+          </div>
+          <div>
+            <a class="navigation-block__link" href="#"
+              >Belins Growth<br />Podcast</a
+            >
+          </div>
           <div><a class="navigation-block__link" href="#">Help Center</a></div>
         </span>
         <span class="navigation-block">
@@ -369,7 +457,9 @@
           <img src="./ui/Social/Social media.png" alt="icon" />
         </div>
         <div class="belkins-right">
-          <p class="belkins-right__text">Copyright Belkins Inc 2022. All right reserved</p>
+          <p class="belkins-right__text">
+            Copyright Belkins Inc 2022. All right reserved
+          </p>
         </div>
         <div class="policy">
           <a class="policy__link" href="#">Privacy policy</a>

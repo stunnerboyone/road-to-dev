@@ -4,11 +4,133 @@ body {
   font-style: normal;
 }
 
+.conteiner {
+  position: relative;
+  max-width: 1344px;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.button__primary {
+  border-radius: 6px;
+  align-items: center;
+  background-color: #ff5e00;
+  color: #fff;
+  border: none;
+}
+.button__circkle {
+  vertical-align: bottom;
+  width: 56px;
+  height: 56px;
+  background-color: #fff;
+  border-radius: 50%;
+  border: 1px solid #FAC09E;
+}
+.button__outline {
+  border-radius: 6px;
+  align-items: baseline;
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
+.button__medium {
+  padding: 8px 20px;
+  height: 40px;
+}
+.button__large {
+  padding: 16px 24px;
+}
+.button__arrow-right {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tittle {
+  margin: 0;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 56px;
+}
+.tittle__small {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+}
+.tittle__large {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+}
+.tittle__xtra-large {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 64px;
+}
+.tittle__black {
+  color: #292929;
+}
+.tittle__orange {
+  color: #ff5e00;
+}
+.tittle__gray {
+  color: #ccc;
+}
+
+.text {
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #3d3d3d;
+}
+.text__small {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+}
+.text__large {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+}
+.text__tiny {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+}
+.text__bold {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+}
+.text__name {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+}
+.text__gray {
+  color: #b8b8b8;
+}
+.text__white {
+  color: #fff;
+}
+
+.button-text {
+  color: #3d3d3d;
+}
+.button-text__large {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+}
+
 .header {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
+  z-index: 2;
   min-height: 72px;
   box-shadow: 8px 16px 32px rgba(0, 0, 0, 0.03);
   background-color: #fff;
@@ -62,24 +184,6 @@ body {
   margin: auto;
 }
 
-.button__outline {
-  width: 115px;
-  height: 40px;
-  box-sizing: border-box;
-  background-color: #fff;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-}
-
-.button__primary {
-  width: 115px;
-  height: 40px;
-  background-color: #ff5e00;
-  color: #fff;
-  border-radius: 6px;
-  border: none;
-}
-
 .partners {
   max-height: 80px;
   overflow: hidden;
@@ -87,25 +191,103 @@ body {
 
 .home-block {
   max-width: 1344px;
-  padding: 156px 16px 96px 16px;
+  padding: 156px 16px 96px;
   margin: auto;
 }
 
 .how-it-works {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   max-width: 1344px;
   margin: 160px auto;
+  padding: 0 16px;
 }
 
-.how-it-works__button {
-  padding: 16px 16px 16px 24px;
-  background-color: #ff5e00;
-  color: #fff;
-  border-radius: 6px;
-  border: none;
+.how-it-works__heading {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 56px;
+  color: #292929;
+}
+
+.steps {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+
+.step {
+  display: flex;
+  align-items: center;
+  padding: 48px 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.step__number {
+  margin: 0;
+  padding-right: 32px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+  color: #ccc;
+}
+
+.step__heading {
+  margin: 0;
+  padding: 0 131px 0 32px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+  color: #ccc;
+}
+
+.step__text {
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: 60px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #b8b8b8;
+}
+
+.brian-hicks__container {
+  margin-top: 160px;
+}
+.brian-hicks__tittle {
+  margin-bottom: 160px;
+}
+
+.brian-hicks-interview {
+  display: flex;
+  justify-content: space-around;
+  max-height: 588px;
+}
+
+.interview-photo {
+  max-height: 560;
+  padding: 0 32px;
+}
+
+.interview-content {
+  padding: 32px;
+}
+.interview-content__tittle {
+  margin: 32px 0;
+}
+
+.explore-service {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  max-width: 225px;
+  margin-top: 32px;
 }
 
 .footer {
   max-width: 1440px;
+  width: 100%;
   margin: auto;
   padding: 56px 64px 40px;
 }
@@ -119,7 +301,7 @@ body {
   margin: 62px 0;
 }
 
-.footer-contacts__link a {
+.footer-contacts__link {
   font-weight: 400;
   font-size: 14px;
   line-height: 28px;
@@ -136,7 +318,7 @@ body {
   font-weight: 600;
   font-size: 14px;
   line-height: 24px;
-  margin: 0 0 8px 0;
+  margin: 0 0 8px;
 }
 
 .navigation-block__link {
