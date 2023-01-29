@@ -27,6 +27,7 @@ body {
 }
 
 .button {
+  cursor: pointer;
   &__primary {
     background-color: $orange;
     color: $white;
