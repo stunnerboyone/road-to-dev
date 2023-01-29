@@ -195,25 +195,36 @@ body {
 .bubble{
   position: absolute;
   border-radius: 50%;
-  &__orange{
+  &__orange {
     background: radial-gradient(72.33% 86.91% at 26.44% 13.09%, #FCC8AE 12.69%, #FF6221 64.54%, #FE8C5A 79.65%, #FCC8AE 89.02%);
+    box-shadow: 12px 24px 48px rgba(255, 108, 37, 0.32);
     &--solid{
       background: linear-gradient(267.87deg, #F5803D 0%, #FF5E00 100%);
       box-shadow: 12px 24px 48px rgba(255, 108, 37, 0.32);
     }
+
+    &--gradient {
+      box-shadow: 12px 24px 48px rgba(255, 108, 37, 0.32);
+    }
   }
 
-  &__white{
+  &__white {
     background: rgba(255, 255, 255, 0.6);
     box-shadow: 12px 20px 32px 2px rgba(209, 197, 188, 0.16);
     backdrop-filter: blur(12px);
     border: 2px solid #FFFFFF;
   }
 
-  &__grey{
+  &__grey {
     background: radial-gradient(91.53% 81.73% at 35.1% 31.73%, #525252 0%, #292929 48.86%, #141414 78.46%);
     opacity: 0.3;
     border: 2px solid #8F8F8F;
+  }
+
+  &__black {
+    background: radial-gradient(91.53% 81.73% at 35.1% 31.73%, #525252 0%, #292929 48.86%, #141414 78.46%);
+    box-shadow: 12px 24px 48px 12px rgba(20, 20, 20, 0.32);
+    transform: matrix(-1, 0, 0, 1, 0, 0);
   }
 }
 
@@ -373,24 +384,42 @@ body {
   }
 }
 
-.package-block {
-  padding: 64px;
-  background: linear-gradient(225deg, #3D3D3D 0%, #292929 100%);
+.service-packages {
+  margin-top: 160px;
   overflow: hidden;
 }
-
-.include-top {
-  display: flex;
+.service-packages-plan {
+  margin-top: 64px;
+  padding: 64px;
+  border-radius: 32px;
+  background: linear-gradient(225deg, #3D3D3D 0%, #292929 100%);
+  &__bubble {
+    &--orange {
+      width: 128px;
+      height: 128px;
+      left: -80px;
+      top: 350px;
+    }
+    &--black {
+      width: 160px;
+      height: 160px;
+      right: -55px;
+      top: 180px;
+    }
+  }
 }
-
-.table-row {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.table-row {
-  display: flex;
+.package-table {
+  text-align: center;
+  width: 100%;
+  border-spacing: 32px 8px;
+  &__heading {
+    text-align: start;
+  }
+  &__row {
+    &--heading {
+      margin-bottom: 24px;
+    }
+  }
 }
 
 .brian-hicks {
@@ -509,9 +538,11 @@ body {
     ' lion-energy lion-energy';
   gap: 32px;
 }
-.lion-energy{ 
+
+.lion-energy { 
   grid-area: lion-energy;
 }
+
 .case-studies {
   padding: 32px;
   background: rgba(255, 255, 255, 0.8);

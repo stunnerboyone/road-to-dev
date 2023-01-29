@@ -156,9 +156,13 @@ body {
 }
 .bubble__orange {
   background: radial-gradient(72.33% 86.91% at 26.44% 13.09%, #FCC8AE 12.69%, #FF6221 64.54%, #FE8C5A 79.65%, #FCC8AE 89.02%);
+  box-shadow: 12px 24px 48px rgba(255, 108, 37, 0.32);
 }
 .bubble__orange--solid {
   background: linear-gradient(267.87deg, #F5803D 0%, #FF5E00 100%);
+  box-shadow: 12px 24px 48px rgba(255, 108, 37, 0.32);
+}
+.bubble__orange--gradient {
   box-shadow: 12px 24px 48px rgba(255, 108, 37, 0.32);
 }
 .bubble__white {
@@ -171,6 +175,11 @@ body {
   background: radial-gradient(91.53% 81.73% at 35.1% 31.73%, #525252 0%, #292929 48.86%, #141414 78.46%);
   opacity: 0.3;
   border: 2px solid #8F8F8F;
+}
+.bubble__black {
+  background: radial-gradient(91.53% 81.73% at 35.1% 31.73%, #525252 0%, #292929 48.86%, #141414 78.46%);
+  box-shadow: 12px 24px 48px 12px rgba(20, 20, 20, 0.32);
+  transform: matrix(-1, 0, 0, 1, 0, 0);
 }
 
 .space-between {
@@ -324,24 +333,40 @@ body {
   z-index: -2;
 }
 
-.package-block {
-  padding: 64px;
-  background: linear-gradient(225deg, #3D3D3D 0%, #292929 100%);
+.service-packages {
+  margin-top: 160px;
   overflow: hidden;
 }
 
-.include-top {
-  display: flex;
+.service-packages-plan {
+  margin-top: 64px;
+  padding: 64px;
+  border-radius: 32px;
+  background: linear-gradient(225deg, #3D3D3D 0%, #292929 100%);
+}
+.service-packages-plan__bubble--orange {
+  width: 128px;
+  height: 128px;
+  left: -80px;
+  top: 350px;
+}
+.service-packages-plan__bubble--black {
+  width: 160px;
+  height: 160px;
+  right: -55px;
+  top: 180px;
 }
 
-.table-row {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.package-table {
+  text-align: center;
+  width: 100%;
+  border-spacing: 32px 8px;
 }
-
-.table-row {
-  display: flex;
+.package-table__heading {
+  text-align: start;
+}
+.package-table__row--heading {
+  margin-bottom: 24px;
 }
 
 .brian-hicks {
