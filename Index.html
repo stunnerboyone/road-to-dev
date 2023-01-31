@@ -47,7 +47,7 @@
     </header>
     <div class="home-screen">
       <div class="home-screen__content">
-        <h1 class="content__tittle">B2B Appointment <br />Serring Services</h1>
+        <h1 class="content__title">B2B Appointment <br />Serring Services</h1>
         <p class="content__text">
           We deliver top-notch appointments to skyrockets to skyrocket
           <br />your business
@@ -60,7 +60,7 @@
       <img class="home-screen__calendar" src="./ui/Appointment setting 1.png" alt="calendar">
     </div>
     <div class="partners">
-      <div class="partners-logo">
+      <div class="partners__banner">
         <img src="./ui/Partners/Size=80px, Company=Ami, State=Default.png" />
         <img
           src="./ui/Partners/Size=80px, Company=Apex Logistics, State=Default.png"
@@ -204,73 +204,67 @@
         />
       </div>
     </div>
-    <div class="how-it-works conteiner">
-      <h1 class = "tittle tittle__black ">How It Works</h1>
-      <ol class="how-it-works-steps">
-        <li class="how-it-works-steps__step">
-          <div class="space-between">
-            <h2 class="how-it-works-steps__number tittle tittle__large tittle__gray">01</h2>
-            <h2 class="tittle tittle__large tittle__gray">Campaign Outline</h2>
+    <div class="how-it-works">
+      <h2 class = "sub-title">How It Works</h2>
+      <ol class = "how-it-works__list">
+        <li class="list__step">
+          <div class="step__title">
+            <span class="step__name">01</span>
+            <span class="step__name">Campaign Outline</span>
           </div>
-          <div class="how-it-works-steps__text">
-            <p class="text text__gray">
-              Meet the team of experts who will dig deep into your<br />business
-              and develop a customized outreach. We create<br />professional
-              marketing campaigns based on your ICP, unique<br /> value
-              proposition, and market research.
-            </p>
-          </div>
+          <p class="step__text">
+            Meet the team of experts who will dig deep into your<br />business
+            and develop a customized outreach. We create<br />professional
+            marketing campaigns based on your ICP, unique<br /> value
+            proposition, and market research.
+          </p>
         </li>
-        <li class="how-it-works-steps__step">
-          <div class="space-between">
-            <h2 class="how-it-works-steps__number tittle tittle__large tittle__gray">02</h2>
-            <h2 class="tittle tittle__large tittle__gray">Audience Building</h2>
+        <li class="list__step">
+          <div class="step__title">
+            <span class="step__name">02</span>
+            <span class="step__name">Audience Building</span>
           </div>
-          <div class="how-it-works-steps__text">
-            <p class="text text__gray">
-              Our Data Mining experts will help you define the crucial criteria
-              to<br />qualify the right leads who perfectly match your ICP. We
-              conduct<br />thorough audience research and access hundreds of data
-              sources to<br />maximize your ROI.
-            </p>
-          </div>
+          <p class="step__text">
+            Our Data Mining experts will help you define the crucial criteria
+            to<br />qualify the right leads who perfectly match your ICP. We
+            conduct<br />thorough audience research and access hundreds of data
+            sources to<br />maximize your ROI.
+          </p>
         </li>
-        <li class="how-it-works-steps__step">
-          <div class="space-between">
-            <h2 class="how-it-works-steps__number tittle tittle__large tittle__gray">03</h2>
-            <h2 class="tittle tittle__large tittle__gray">Target outreach</h2>
+        <li class="list__step">
+          <div class="step__title">
+            <span class="step__name">03</span>
+            <span class="step__name">Target outreach</span>
           </div>
-          <div class="how-it-works-steps__text">
-            <p class="text text__gray">
-              Our experts design customized templates to win the hearts of your<br />ideal
-              prospects and set up more appointments as a result. The 100%<br />email
-              delivery and 0% spam rate mission is more than possible for<br />Belkins
-              team.
-            </p>
-          </div>
+          <p class="step__text">
+            Our experts design customized templates to win the hearts of your<br />ideal
+            prospects and set up more appointments as a result. The 100%<br />email
+            delivery and 0% spam rate mission is more than possible for<br />Belkins
+            team.
+          </p>
         </li>
-        <li class="how-it-works-steps__step">
-          <div class="space-between">
-            <h2 class="how-it-works-steps__number tittle tittle__large tittle__gray">04</h2>
-            <h2 class="tittle tittle__large tittle__gray">Appointment Setting</h2>
+        <li class="list__step">
+          <div class="step__title">
+            <span class="step__name">04</span>
+            <span class="step__name">Appointment Setting</span>
           </div>
-          <div class="how-it-works-steps__text">
-            <p class="text text__gray">
-              Our B2B appointment setting services include filling your
-              calendar<br />with meetings that are likely to convert into sales.
-              Our SDRs always<br />make sure that the leads confirm the
-              appointments and reschedule<br />the calls beforehand if needed.
-            </p>
-          </div>
+          <p class="step__text">
+            Our B2B appointment setting services include filling your
+            calendar<br />with meetings that are likely to convert into sales.
+            Our SDRs always<br />make sure that the leads confirm the
+            appointments and reschedule<br />the calls beforehand if needed.
+          </p>
         </li>
       </ol>
-      <button class="button button__primary button__arrow-right button__large text__xtra-bold how-it-works__button">
-        Book a free consultation
-        <img class="button__image" src="./ui/Vector.png" alt=">"/>
-      </button>
+      <div class="how-it-works__button">
+        <button class="button button_arrow-right_big">
+          Book a free consultation
+          <img src="./ui/Vector.png"/>
+        </button>
+      </div>
     </div>
     <div class="count conteiner">
-      <h1 class="tittle tittle__black count__tittle" >
+      <h1 class="title title__black count__title" >
         We hit 200k apps in 2021
       </h1>
       <p class="text text__large text__dark-gray">
@@ -279,20 +273,20 @@
       <div class="bubble bubble__white count-bubble__white"></div>
       <div class="bubble bubble__orange count-bubble__orange"></div>
       <div class="count-value">
-        <div class="count-value__number tittle__large tittle__black">2</div>
-        <div class="count-value__number tittle__large tittle__black">0</div>
-        <div class="count-value__number tittle__large tittle__black">1</div>
-        <div class="count-value__number tittle__large tittle__black">0</div>
-        <div class="count-value__number tittle__large tittle__black">8</div>
-        <div class="count-value__number tittle__large tittle__black">1</div>
+        <div class="count-value__number title__large title__black">2</div>
+        <div class="count-value__number title__large title__black">0</div>
+        <div class="count-value__number title__large title__black">1</div>
+        <div class="count-value__number title__large title__black">0</div>
+        <div class="count-value__number title__large title__black">8</div>
+        <div class="count-value__number title__large title__black">1</div>
       </div>
     </div>
     <div class="service-packages conteiner">
-      <h1 class="tittle tittle__black">Service Packages</h1>
+      <h1 class="title title__black">Service Packages</h1>
       <div class="service-packages-plan">
         <table class="package-table">
           <tr class="package-table__row--heading">
-            <th class="package-table__heading"><h1 class="tittle tittle__small tittle__orange">include</h1></th>
+            <th class="package-table__heading"><h1 class="title title__small title__orange">include</h1></th>
             <td><p class="text text__bold text__white">Startup</p></td>
             <td><p class="text text__bold text__orange">Growth</p></td>
             <td><p class="text text__bold text__white">Enterprise</p></td>
@@ -354,7 +348,7 @@
           </tr>
           <tr class="package-table__row--heading">
             <th class="package-table__heading">
-              <h1 class="tittle tittle__small tittle__orange">Outcomes</h1>
+              <h1 class="title title__small title__orange">Outcomes</h1>
             </th>
           </tr>
           <tr class="package-table__row">
@@ -394,14 +388,14 @@
     </div>
     <div class="brian-hicks">
       <div class="conteiner">
-        <h1 class="brian-hicks__tittle tittle__xtra-large tittle__orange">From startups to enterprises.</h1>
+        <h1 class="brian-hicks__title title__xtra-large title__orange">From startups to enterprises.</h1>
         <div class="brian-hicks-interview">
           <div class="interview-photo"><img src="./ui/Photo/Frame 17710.png" alt="Brian Hicks" class="brien-hicks__photo"></div>
           <div class="interview-content content">
             <p class="text text__xtra-bold text__black">
               Brian Hicks <span class="text text__large text__gray">Snr. Sales Exacutive</span>
             </p>
-            <h2 class="interview-content__tittle tittle tittle__large tittle__black ">
+            <h2 class="interview-content__title title title__large title__black ">
               The sales journey is too<br>complex not to have us<br>on your side.
             </h2>
             <p class="text text__black">
@@ -428,7 +422,7 @@
     <div class="ready-to-clients conteiner">
       <div class="getting-clients">
         <div class="ready-to-start">
-          <h1 class="tittle tittle__black ">
+          <h1 class="title title__black ">
             Ready to start<br>
             getting clients?
           </h1>
@@ -445,12 +439,12 @@
       </div>
     </div>
     <div class="results conteiner">
-      <h1 class="tittle tittle__black">Results</h1>
+      <h1 class="title title__black">Results</h1>
       <div class="results-box">
         <div class="results-block">
-          <h1 class="tittle tittle__orange">790+</h1>
+          <h1 class="title title__orange">790+</h1>
           <div class="results-block__divider"></div>
-          <h3 class="tittle tittle__black tittle__small">Loyal<br>customers</h3>
+          <h3 class="title title__black title__small">Loyal<br>customers</h3>
           <p class="results-block__text text text__black text__xtra-small">
             More than 790 satisfied clients in<br>
             over 4 years with a 90% retention<br>
@@ -460,9 +454,9 @@
           </p>
         </div>
         <div class="results-block">
-          <h1 class="tittle tittle__orange">200K</h1>
+          <h1 class="title title__orange">200K</h1>
           <div class="results-block__divider"></div>
-          <h3 class="tittle tittle__black tittle__small">Appointments<br>Scheduled</h3>
+          <h3 class="title title__black title__small">Appointments<br>Scheduled</h3>
           <p class="results-block__text text text__black text__xtra-small">
             More than 200,000 appointments<br>
             delivered to our clients across<br>
@@ -472,9 +466,9 @@
           </p>
         </div>
         <div class="results-block">
-          <h1 class="tittle tittle__orange">10:1</h1>
+          <h1 class="title title__orange">10:1</h1>
           <div class="results-block__divider"></div>
-          <h3 class="tittle tittle__black tittle__small">ROI<br>Achived</h3>
+          <h3 class="title title__black title__small">ROI<br>Achived</h3>
           <p class="results-block__text text text__black text__xtra-small">
             $10 dollar return per $1 invested<br>
             across 25 industries. We know how<br>
@@ -484,9 +478,9 @@
           </p>
         </div>
         <div class="results-block">
-          <h1 class="tittle tittle__orange">60%</h1>
+          <h1 class="title title__orange">60%</h1>
           <div class="results-block__divider"></div>
-          <h3 class="tittle tittle__black tittle__small">CAC<br>Reduction</h3>
+          <h3 class="title title__black title__small">CAC<br>Reduction</h3>
           <p class="results-block__text text text__black text__xtra-small">
             The reported average acquisition<br>
             cost as a result of our marketing<br>
@@ -500,7 +494,7 @@
     </div>
     <div class="clients-review conteiner">
       <div class="clients-review-header">
-        <h1 class="tittle tittle__black">
+        <h1 class="title title__black">
           Meet the clients that grow with us
         </h1>
         <p class="clients-review-header__text text text__black text__large">
@@ -517,11 +511,11 @@
           </div>
           <div class="space-between">
             <div class="case-studies-block">
-              <h1 class="tittle tittle__orange">6k+</h1>
+              <h1 class="title title__orange">6k+</h1>
               <p class="text text__orange">Leads</p>
             </div>
             <div class="case-studies-block">
-              <h1 class="tittle tittle__orange">65%+</h1>
+              <h1 class="title title__orange">65%+</h1>
               <p class="text text__orange text__tiny">Email open rate</p>
             </div>
           </div>
@@ -541,7 +535,7 @@
         </div>
         <div class="stephen-skeel testimonials">
           <img src="./ui/testimonial_logo.png">
-          <h1 class="tittle tittle__white">Stephen Skeel</h1>
+          <h1 class="title title__white">Stephen Skeel</h1>
           <p class="text text__white">
             Executive Producer and Co-Founder<br>
             at 7 Wonders Cinema
@@ -563,13 +557,13 @@
             </div>
             <p class="text text__tiny text__gray">Quantity: 91</p>
           </div>
-          <h3 class="quantity__tittle tittle tittle__small text__gray">
+          <h3 class="quantity__title title title__small text__gray">
             Without Belkins, we would not<br>
             be where we are right now.
           </h3>
           <div class="space-between">
             <div>
-              <p class="text text__name tittle__black">Pedro Morgado</p>
+              <p class="text text__name title__black">Pedro Morgado</p>
               <p class="text text__xtra-small text__dark-gray">BytePitch Founder</p>
               <a class="quantity__link link text__tiny text__black" href="#">
                 Read Full Review
@@ -590,14 +584,14 @@
             </div>
             <p class="text text__tiny text__gray">Quantity: 48</p>
           </div>
-          <h3 class="quantity__tittle tittle tittle__small text__gray">
+          <h3 class="quantity__title title title__small text__gray">
             Great Appointment<br>
             Setting Agency!
           </h3>
           <img class="quantity-big__img" src="./ui/Clients/IvanTalaychuk.png">
           <div class="space-between">
             <div>
-              <p class="text text__name tittle__black">Ivan Talaychuk</p>
+              <p class="text text__name title__black">Ivan Talaychuk</p>
               <p class="text text__xtra-small text__dark-gray">Co-Founder CEO</p>
               <a class="quantity__link link text__tiny text__black" href="#">
                 Read Full Review
@@ -617,7 +611,7 @@
             <img src="./ui/WhiteStar.png">
             <img src="./ui/WhiteStar.png">
           </div>
-          <div class="partner-review__tittle">
+          <div class="partner-review__title">
             <h3 class="text text__white">G2 /</h3>
             <h3 class="partner-review__text text text__extra-bold text__palette-orange">4.8 score</h3>
           </div>
@@ -633,7 +627,7 @@
             <img src="./ui/GrayStar.png">
             <img src="./ui/GrayStar.png">
           </div>
-          <div class="partner-review__tittle">
+          <div class="partner-review__title">
             <h3 class="text text__white">Clutch /</h3>
             <h3 class="partner-review__text text text__extra-bold text__gray">4.9 score</h3>
           </div>
@@ -652,13 +646,13 @@
             </div>
             <p class="text text__tiny text__gray">Quantity: 48</p>
           </div>
-          <h3 class="quantity__tittle tittle tittle__small text__gray">
+          <h3 class="quantity__title title title__small text__gray">
             They are committed to<br>
             producing quality results.
           </h3>
           <div class="space-between">
             <div>
-              <p class="text text__name tittle__black">Alan Morte</p>
+              <p class="text text__name title__black">Alan Morte</p>
               <p class="text text__xtra-small text__dark-gray">Head of Analytics, Three Ventures</p>
               <a class="quantity__link link text__tiny text__black" href="#">
                 Read Full Review
@@ -677,11 +671,11 @@
         </div>
         <div class="space-between">
           <div class="case-studies-block">
-            <h1 class="tittle tittle__orange">63</h1>
+            <h1 class="title title__orange">63</h1>
             <p class="text text__orange">In Revenue</p>
           </div>
           <div class="case-studies-block">
-            <h1 class="tittle tittle__orange">50%+</h1>
+            <h1 class="title title__orange">50%+</h1>
             <p class="text text__orange text__tiny">Email reply rate</p>
           </div>
         </div>
@@ -709,7 +703,7 @@
             </div>
             <p class="text text__tiny text__gray">Quantity: 48</p>
           </div>
-          <h3 class="quantity__tittle tittle tittle__small text__gray">
+          <h3 class="quantity__title title title__small text__gray">
             Their team is very<br>
             attentive to our<br>
             business needs.
@@ -717,7 +711,7 @@
           <img class="quantity-big__img" src="./ui/Clients/EkaterinaSushchevskaya.png">
           <div class="space-between">
             <div>
-              <p class="text text__name tittle__black">Ekaterina Sushchevskaya</p>
+              <p class="text text__name title__black">Ekaterina Sushchevskaya</p>
               <p class="text text__xtra-small text__dark-gray">Account Executive Team Lead, SaaS Firm</p>
               <a class="quantity__link link text__tiny text__black" href="#">
                 Read Full Review
@@ -729,41 +723,41 @@
       </div>
     </div>
     <div class="faq conteiner">
-      <h1 class="faq__tittle tittle tittle__black">Frequently Asked<br>Questions</h1>
+      <h1 class="faq__title title title__black">Frequently Asked<br>Questions</h1>
       <div class="question">
         <img class="question__image" src="./ui/Arrows/Arrow.png" alt="">
-        <p class="text text__name tittle__black">Lorem ipsum dolor sit amet, consectetur adipiscing elit?</p>
+        <p class="text text__name title__black">Lorem ipsum dolor sit amet, consectetur adipiscing elit?</p>
       </div>
       <div class="question">
         <img class="question__image" src="./ui/Arrows/Arrow.png" alt="">
-        <p class="text text__name tittle__black">Lorem ipsum dolor sit amet, consectetur adipiscing elit?</p>
+        <p class="text text__name title__black">Lorem ipsum dolor sit amet, consectetur adipiscing elit?</p>
       </div>
       <div class="question">
         <img class="question__image" src="./ui/Arrows/Arrow.png" alt="">
-        <p class="text text__name tittle__black">Lorem ipsum dolor sit amet, consectetur adipiscing elit?</p>
+        <p class="text text__name title__black">Lorem ipsum dolor sit amet, consectetur adipiscing elit?</p>
       </div>
       <div class="question">
         <img class="question__image" src="./ui/Arrows/Arrow.png" alt="">
-        <p class="text text__name tittle__black">Lorem ipsum dolor sit amet, consectetur adipiscing elit?</p>
+        <p class="text text__name title__black">Lorem ipsum dolor sit amet, consectetur adipiscing elit?</p>
       </div>
       <div class="question">
         <img class="question__image" src="./ui/Arrows/Arrow.png" alt="">
-        <p class="text text__name tittle__black">Lorem ipsum dolor sit amet, consectetur adipiscing elit?</p>
+        <p class="text text__name title__black">Lorem ipsum dolor sit amet, consectetur adipiscing elit?</p>
       </div>
       <div class="question">
         <img class="question__image" src="./ui/Arrows/Arrow.png" alt="">
-        <p class="text text__name tittle__black">Lorem ipsum dolor sit amet, consectetur adipiscing elit?</p>
+        <p class="text text__name title__black">Lorem ipsum dolor sit amet, consectetur adipiscing elit?</p>
       </div>
       <div class="faq__bubble--orange bubble bubble__orange"></div>
       <div class="faq__bubble--white bubble bubble__white"></div>
     </div>
     <div class="seo-block conteiner">
       <div>
-        <h1 class="tittle tittle__black tittle__large">
+        <h1 class="title title__black title__large">
           B2B Appointment Setting:<br>
           An Integral Part of Lead Generation
         </h1>
-        <p class="seo-block__text text text__large tittle__black">Check out more</p>
+        <p class="seo-block__text text text__large title__black">Check out more</p>
       </div>
       <div class="seo-block__bubble--white bubble bubble__white"></div>
       <div class="seo-block__bubble--orange bubble bubble__orange"></div>
@@ -773,7 +767,7 @@
       <div class="conteiner">
         <div class="cta-content">
           <div class="cta-info">
-            <h1 class="tittle text__white">
+            <h1 class="title text__white">
               Contact Us to Begin<br />Your Outbound Jorney
             </h1>
             <p class="cta-info__text text text__light-gray">
@@ -787,23 +781,23 @@
             </button>
           </div>
           <div class="cta-statistic">
-            <h3 class="cta-statistic__tittle tittle tittle__small text__dark-gray">
+            <h3 class="cta-statistic__title title title__small text__dark-gray">
               With Belkins Today<br />Your Business:
             </h3>
             <div class="cta-statistic__item">
-              <h1 class="tittle text__dark-gray tittle__xtra-large cta-statistic__value">25%</h1>
+              <h1 class="title text__dark-gray title__xtra-large cta-statistic__value">25%</h1>
               <div class="cta-statistic__dot"></div>
               <p class="text text__dark-gray text__name">Average closing rate<br />across 25 industries</p>
             </div>
             <div class="cta-statistic__item">
-              <h1 class="tittle text__dark-gray tittle__xtra-large cta-statistic__value">10:1</h1>
+              <h1 class="title text__dark-gray title__xtra-large cta-statistic__value">10:1</h1>
               <div class="cta-statistic__dot"></div>
               <p class="text text__dark-gray text__name">
                 $10 dollar return per $1<br />invested in this channel
               </p>
             </div>
             <div class="cta-statistic__item">
-              <h1 class="tittle text__dark-gray tittle__xtra-large cta-statistic__value">10</h1>
+              <h1 class="title text__dark-gray title__xtra-large cta-statistic__value">10</h1>
               <span class="cta-statistic__dot"></span>
               <div class="text text__dark-gray text__name">
                 Appointment booked<br />per Campaign per mounth
