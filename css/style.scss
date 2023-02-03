@@ -49,7 +49,7 @@ body {
   padding: 0;
   background: none;
   border: none;
-  @media (min-width: 1200px) {
+  @media (min-width: 1201px) {
     display: none;
     cursor: none;
   }
@@ -145,15 +145,15 @@ body {
 .home-screen {
   display: flex;
   justify-content: space-between;
-  box-sizing: border-box;
   align-items: center;
   vertical-align: middle;
+  box-sizing: border-box;
   max-width: 1344px;
   margin: 170px auto 0;
   padding: 0 16px;
 }
 
-.content__title {
+.title {
   margin: 0 0 24px;
   font-weight: 700;
   font-size: 60px;
@@ -161,12 +161,27 @@ body {
   color: $typography-headings;
 }
 
-.content__text {
-  margin: 0 0 48px;
+.title_primary {
+  @media (max-width: 600px){
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 48px;
+  }
+}
+
+.home-screen-content__text {
+  margin: 0 0 48px ;
+  max-width: 430px;
   color: $typography-body;
   font-weight: 400;
   font-size: 18px;
   line-height: 32px;
+  @media (max-width: 600px) {
+    max-width: 328px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+  }
 }
 
 .button_arrow-right {
@@ -181,29 +196,51 @@ body {
   background-color: $orange;
   color: $white;
   border: 1px solid $orange;
+  &:hover {
+    opacity: 0.8;
+  }
 }
 
-.button_arrow-right:hover {
-  opacity: 0.8;
+.home-screen__img {
+  position: relative;
+  left: -15%;
+  top: 3.75%;
+  bottom: 3.75%;
+  @media (max-width: 1200px) {
+    width: 328px;
+    height: 304px;;
+    left: -8%;
+  }
+
+  @media (max-width: 900px) {
+    display: none;
+  }
+
 }
 
 .partners {
   margin-top: 96px;
   max-height: 80px;
   overflow: hidden;
+  @media (max-width: 600px) {
+    max-height: 240px;
+  } 
 }
 
 .partners__banner {
-  width: 10000px;
+  width: 5000px;
   position: relative;
   animation-name: partners__animation;
-  animation-duration: 200s;
+  animation-duration: 16s;
   animation-iteration-count: infinite;
+  @media (max-width: 600px) {
+    width: 900px
+  }
 }
 
 @keyframes partners__animation {
   0% {transform: translatex(0)};
-  100%{transform: translateX(-50000px)};
+  100%{transform: translateX(-3500px)};
 }
 
 .how-it-works {
@@ -219,8 +256,11 @@ body {
   font-size: 48px;
   line-height: 56px;
   color:$typography-headings;
+  @media (max-width: 1200px) {
+    margin: 108px 0 0 0;
+  }
+
   @media (max-width: 800px) {
-    margin: 124px 0 0 0;
     font-weight: 700;
     font-size: 24px;
     line-height: 32px;
@@ -337,6 +377,7 @@ body {
   &:hover {
     opacity: 0.8;
   }
+
   @media (max-width: 800px) {
     margin-top: 32px;
   }
@@ -357,16 +398,27 @@ body {
 }
 
 .count {
-  margin: 160px auto 0;
+  position: relative;
+  margin: 0 auto;
   text-align: center;
 }
 
 .count__title {
-  margin: 0;
+  margin: 200px 0 0 0;
   font-weight: 700;
   font-size: 48px;
   line-height: 56px;
   color: $typography-body;
+  @media (max-width: 1200px) {
+    margin: 168px 0 0 0;
+  }
+  
+  @media (max-width: 800px) {
+    margin: 172px 0 0 0;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+  }
 }
 
 .count__text {
@@ -375,6 +427,12 @@ body {
   font-size: 18px;
   line-height: 32px;
   color: $typography-dark-gray;
+  @media (max-width: 800px) {
+    margin: 4px 0 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+  }
 }
 
 .count__value {
@@ -383,6 +441,10 @@ body {
   align-items: center;
   margin: 64px auto 40px;
   max-width: 404px;
+  @media (max-width: 800px) {
+    max-width: 272px;
+    margin: 32px auto 0;
+  }
 }
 
 .count__block {
@@ -390,6 +452,9 @@ body {
   background-color: $white;
   border-radius: 8px;
   border: 1px solid $white; 
+  @media (max-width: 800px) {
+    padding: 12px;
+  }
 }
 
 .count__number {
@@ -398,8 +463,37 @@ body {
   font-size: 36px;
   line-height: 48px;
   color: $typography-headings;
+  @media (max-width: 800px) {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+  }
 }
 
+.bubble {
+  position: absolute;
+  border-radius: 50%;
+}
+
+.count_bubble_white {
+  z-index: -1;
+  left: calc(50% - 98px - 326px);
+  top: calc(50% - 98px - 127.38px);
+  @media (max-width: 800px) {
+    left: calc(50% - 98px - 185px);
+    top: calc(50% - 98px - 54px);
+  }
+}
+
+.count_bubble_orange {
+  left: calc(50% - 32px + 179px);
+  top: calc(50% - 32px + 9px);
+  @media (max-width: 800px) {
+    left: calc(50% - 32px + 128px);
+    top: calc(50% - 32px + -23px);
+  }
+}
+ 
 .service-packages {
   margin-top: 160px;
 }
