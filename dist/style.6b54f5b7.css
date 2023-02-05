@@ -25,6 +25,21 @@ body {
   max-width: 1312px;
   margin: 0 auto;
 }
+@media (max-width: 1280px) {
+  .header__container {
+    max-width: 1120px;
+  }
+}
+@media (max-width: 1000px) {
+  .header__container {
+    max-width: 952px;
+  }
+}
+@media (max-height: 360px) {
+  .header__container {
+    max-width: 328px;
+  }
+}
 
 .header__block {
   display: flex;
@@ -144,10 +159,24 @@ body {
   justify-content: space-between;
   align-items: center;
   vertical-align: middle;
-  box-sizing: border-box;
-  max-width: 1344px;
+  max-width: 1312px;
   margin: 170px auto 0;
   padding: 0 16px;
+}
+@media (max-width: 1280px) {
+  .home-screen {
+    max-width: 1120px;
+  }
+}
+@media (max-width: 1000px) {
+  .home-screen {
+    max-width: 952px;
+  }
+}
+@media (max-width: 360px) {
+  .home-screen {
+    max-width: 328px;
+  }
 }
 
 .title {
@@ -157,9 +186,8 @@ body {
   line-height: 64px;
   color: #292929;
 }
-
 @media (max-width: 600px) {
-  .title_primary {
+  .title {
     font-weight: 700;
     font-size: 36px;
     line-height: 48px;
@@ -587,7 +615,7 @@ body {
 }
 @media (max-width: 1280px) {
   .brian-hicks__title {
-    margin: 160px 0 160px 0;
+    margin: 160px 0;
     width: 450px;
   }
 }
@@ -614,6 +642,11 @@ body {
 .interview__photo {
   height: 560px;
   margin-left: 92px;
+}
+@media (max-width: 1280px) {
+  .interview__photo {
+    margin: 0;
+  }
 }
 
 .interview-content {
