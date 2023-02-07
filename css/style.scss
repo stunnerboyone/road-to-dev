@@ -11,6 +11,12 @@ $typography-light-gray: #e0e0e0;
 $palette-gray: #ccc;
 $typography-dark-gray: #666;
 
+* {
+  p {
+    margin: 0;
+  }
+}
+
 body {
   font-family: Inter, sans-serif;
   font-style: normal;
@@ -33,8 +39,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  max-width: 1344px;
   padding: 0 16px;
-  max-width: 1312px;
   margin: 0 auto;
   @media (max-width: 1280px) {
     max-width: 1120px;
@@ -101,7 +107,7 @@ body {
 }
 
 .menu__text {
-  margin: 0 4px 0 0;
+  margin-right: 4px;
   color: $typography-body;
   font-weight: 500;
   font-size: 14px;
@@ -159,8 +165,8 @@ body {
   align-items: center;
   vertical-align: middle;
   max-width: 1312px;
-  margin: 170px auto 0;
   padding: 0 16px;
+  margin: 170px auto 0;
   @media (max-width: 1280px) {
     max-width: 1120px;
   }
@@ -180,7 +186,7 @@ body {
   font-size: 60px;
   line-height: 64px;
   color: $typography-headings;
-  @media (max-width: 600px) {
+  @media (max-width: 1000px) {
     font-weight: 700;
     font-size: 36px;
     line-height: 48px;
@@ -236,6 +242,15 @@ body {
 
 }
 
+.partner-logo {
+  display: none;
+  position: relative;
+  animation-name: partners-animation;
+  animation-duration: 200s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
 .partners {
   margin-top: 96px;
   max-height: 80px;
@@ -247,25 +262,28 @@ body {
 
 .partners__banner {
   width: 5000px;
-  position: relative;
-  animation-name: partners__animation;
-  animation-duration: 16s;
-  animation-iteration-count: infinite;
+
   @media (max-width: 600px) {
-    width: 900px
+    width: 2100px
   }
 }
 
-@keyframes partners__animation {
-  0% {transform: translatex(0)};
-  100%{transform: translateX(-3500px)};
+@keyframes partners-animation {
+  0% {transform: translateX(0)};
+  100%{transform: translateX(-10000px)};
 }
 
 .how-it-works {
-  box-sizing: border-box;
-  max-width: 1344px;
-  margin: 0 auto;
+  max-width: 1312px;
   padding: 0 16px;
+  margin: 0 auto;
+  @media (max-width: 1200px) {
+    margin: 128px 0 0;
+  }
+
+  @media (max-width: 800px) {
+    margin: 108px 0 0;
+  }
 }
 
 .sub-title {
@@ -274,14 +292,17 @@ body {
   font-size: 48px;
   line-height: 56px;
   color:$typography-headings;
-  @media (max-width: 1200px) {
-    margin: 108px 0 0 0;
-  }
 
   @media (max-width: 800px) {
     font-weight: 700;
     font-size: 24px;
     line-height: 32px;
+  }
+}
+
+.sub-title_invisible {
+  @media (max-width: 800px) {
+    display: none;
   }
 }
 
@@ -515,43 +536,24 @@ body {
   margin-top: 160px;
 }
 
-.service-packages-plan {
+.service-packages__table {
+  display: grid;
+  grid-template-rows: 48px 48px 48px 48px;
   position: relative;
   overflow: hidden;
   margin-top: 64px;
   padding: 64px;
   border-radius: 32px;
   background: linear-gradient(225deg, #3D3D3D 0%, #292929 100%);
-
-  &__bubble {
-    &--orange {
-      width: 128px;
-      height: 128px;
-      left: -80px;
-      top: 170px;
-    }
-    &--black {
-      width: 160px;
-      height: 160px;
-      right: -75px;
-      top: 30px;
-    }
-  }
 }
 
 .package-table {
   text-align: center;
   width: 100%;
   border-spacing: 32px 8px;
-  &__heading {
-    text-align: start;
-  }
-  &__row {
-    &--heading {
-      margin-bottom: 24px;
-    }
-  }
 }
+
+
 
 .brian-hicks {
   position: relative;
@@ -933,17 +935,17 @@ body {
 
 .faq {
   margin-top: 160px;
-  &__title{
+  &__title {
     margin: 0 0 64px;
   }
-  &__bubble{
-    &--orange{
+  &__bubble {
+    &--orange {
       width: 128px;
       height: 128px;
       right: 208px;
       top: 158px;
     }
-    &--white{
+    &--white {
       width: 256px;
       height: 256px;
       right: 16px;
@@ -959,34 +961,82 @@ body {
   padding: 16px 32px 16px 24px;
   border-radius: 32px;
   background: $white;
-  &__image{
+  &__image {
     margin-right: 12px;
   }
 }
 
 .seo-block {
+  position: relative;
+  padding: 0 16px;
+}
+
+.seo-block__container {
   display: flex;
   justify-content: space-between;
-  align-items:center;
-  margin-top: 160px;
+  align-items: center;
+  box-sizing: border-box;
   padding: 40px;
-  &__text {
-    margin-top: 8px;
+  margin: 160px auto 0;
+  max-width: 1312px;
+  border: 1px solid $typography-light-gray;
+  border-radius: 24px;
+  @media (max-width: 1200px) {
+    margin: 128px auto 0;
   }
 
-  &__bubble {
-    &--white {
-      width: 192px;
-      height: 192px;
-      left: calc(50% - 192px/2 + 320px);
-      top: calc(50% - 192px/2 + 96px);
-    }
-    &--orange {
-      width: 64px;
-      height: 64px;
-      left: calc(50% - 64px/2 + 136px);
-      top: calc(50% - 64px/2 - 92px);
-    }
+  @media (max-width: 850px) {
+    margin: 108px auto 0;
+    padding: 24px;
+    align-items:flex-start;
+  }
+}
+
+.seo-block__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+  color: $typography-headings;
+  @media (max-width: 850px) {
+    max-width: 224px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+
+.seo-block__text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  color: $typography-headings;
+  @media (max-width: 850px) {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+  }
+}
+
+.seo-block__img {
+  @media (max-width: 850px) {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+.seo-block__bubble_white {
+  left: calc(50% - 192px/2 + 320px);
+  top: calc(50% - 192px/2 + 96px);
+  @media (max-width: 1200px) {
+    display: none;
+  }
+}
+
+.seo-block__bubble_orange {
+  left: calc(50% - 160px/2 + 136px);
+  top: calc(50% - 160px/2 - 92px);
+  @media (max-width: 1200px) {
+    display: none;
   }
 }
 
@@ -1090,12 +1140,12 @@ body {
   margin: 62px 0;
 }
 
-.footer-navigation{
+.footer-navigation {
   display: flex;
   justify-content: space-between;
 }
 
-.navigation-block {
+.footer-navigation__block {
   display: flex;
   flex-direction: column;
   margin-left: 75px;
@@ -1106,13 +1156,13 @@ body {
   }
 }
 
-.bottom {
+.footer-bottom {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.policy {
+.footer-policy {
   margin-left: 203px;
   &__link {
     margin-left: 35px;
