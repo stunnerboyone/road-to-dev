@@ -602,9 +602,9 @@ body {
   gap: 64px;
   align-items: center;
 }
-@media (max-width: 1200px) {
+@media (max-width: 1100px) {
   .table__row {
-    grid-template-columns: minmax(256px, 350px) 143px 143px 143px;
+    grid-template-columns: minmax(256px, 550px) 143px 143px 143px;
     column-gap: 20px;
   }
 }
@@ -632,9 +632,15 @@ body {
 
 .table__buttons {
   display: grid;
-  grid-template-columns: minmax(256px, 350px) 149px 149px 149px;
-  gap: 20px;
+  grid-template-columns: minmax(256px, 350px) minmax(149px, 197px) minmax(149px, 197px) minmax(149px, 197px);
+  gap: 64px;
   align-items: center;
+}
+@media (max-width: 1100px) {
+  .table__buttons {
+    grid-template-columns: minmax(256px, 550px) 149px 149px 149px;
+    gap: 20px;
+  }
 }
 
 .table__title {
