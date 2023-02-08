@@ -8,7 +8,7 @@ $typography-body: #3d3d3d;
 $typography-headings: #292929;
 $main-dark: #292929;
 $typography-light-gray: #e0e0e0;
-$palette-gray: #ccc;
+$palette-gray: #3d3d3d;
 $typography-dark-gray: #666;
 
 * {
@@ -530,6 +530,9 @@ body {
   margin: 160px auto 0;
   padding: 0 16px;
   max-width: 1312px;
+  @media (max-width: 950px) {
+    display: none;
+  }
 }
 
 .service-packages__table {
@@ -543,15 +546,32 @@ body {
 
 .table {
   display: grid;
-  grid-template-rows: repeat 156px;
   margin-bottom: 48px;
 }
 
 .table__row {
   display: grid;
-  grid-template-columns: minmax(256px, 288px) minmax(138px, 197px) minmax(138px, 197px) minmax(138px, 197px);
-  column-gap: 64px;
+  grid-template-columns: minmax(256px, 350px) minmax(145px, 197px) minmax(145px, 197px) minmax(145px, 197px);
+  grid-auto-rows: minmax(56px, auto);
+  gap: 64px;
   align-items: center;
+  @media (max-width: 1200px) {
+    grid-template-columns: minmax(256px, 350px) 143px 143px 143px;
+    column-gap: 20px;
+  }
+}
+
+.divider {
+  width: 100%;
+  height: 0;
+  border-bottom: 1px solid $palette-gray;
+}
+
+.table__row_heading {
+  margin-bottom: 32px;
+}
+
+.table__row_hover {
   &:hover{
     background-color: $typography-dark-gray;
     border-radius: 8px;
@@ -563,20 +583,13 @@ body {
       color: $typography-light-gray;
     }
   }
-  @media (max-width: 1200px) {
-    column-gap: 24px;
-  }
 }
 
-.table__row-heading {
+.table__buttons {
   display: grid;
-  grid-template-columns: minmax(256px, 288px) minmax(138px, 197px) minmax(138px, 197px) minmax(138px, 197px);
-  column-gap: 64px;
-  margin-bottom: 32px;
+  grid-template-columns: minmax(256px, 350px) 149px 149px 149px;
+  gap: 20px;
   align-items: center;
-  @media (max-width: 1200px) {
-    column-gap: 24px;
-  }
 }
 
 .table__title {
@@ -610,6 +623,38 @@ body {
 
 .table__text_gray {
   color: $typography-gray;
+}
+
+.table__button {
+  padding: 8px 20px;
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid #ccc;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  color: $white;
+  &:hover {
+    border: 1px solid $orange;
+    color: $orange;
+  }
+}
+
+.table__bubble_orange {
+  width: 228px;
+  height: 228px;
+  left: -116px;
+  top: 242px;
+}
+
+.table__bubble_black {
+  width: 160px;
+  height: 160px;
+  right: -80px;
+  top: 40px;
+  background: radial-gradient(91.53% 81.73% at 35.1% 31.73%, #525252 0%, #292929 48.86%, #141414 78.46%);
+  box-shadow: 12px 24px 48px 12px rgba(20, 20, 20, 0.32);
+  border-radius: 81.9898px;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
 }
 
 .brian-hicks {
