@@ -1,34 +1,16 @@
-let numero = document.getElementsByClassName("partner-logo");
 
-let logosOnScreen = 0;
+const container = document.querySelector(".how-it-works-list");
 
-if (logosOnScreen < 20) {
-    for (let i = 0; i <= numero.length; i++) {
-    numero [i].style.display = "inline";
-    logosOnScreen ++;
-    console.log(logosOnScreen);
+container.addEventListener("mousemove", function (event) {
+    const target = event.target;
+    if(target.classList.contains("how-it-works-list__item")){
+        Array.from(container.children).forEach(element => {
+            console.dir(element);
+            const child = element;
+            if (child.classList.contains("how-it-works-list__active")){
+                child.classList.remove("how-it-works-list__active");
+            }
+        });
+        target.classList.add("how-it-works-list__active");
     }
-}
-else {
-    numero.style.display = "none";
-    logosOnScreen = 0;
-}
-
-
-const partnerOnDisplay = (target) => {
-    let rect = target.getBoundingClientRect();
-
-    let partnerLogoPosition = {
-        left: window.pageXOffset + rect.left,
-        right: window.pageXOffset + rect.right,
-    };
-    let windowPosition = {
-        left: window.pageXOffset,
-        right: window.pageXOffset,
-    };
-    if (partnerLogoPosition.right < windowPosition.left && partnerLogoPosition.left > windowPosition.right) {
-        target.style.display = "none";
-    }
-};
-
-partnerOnDisplay(numero);
+});
