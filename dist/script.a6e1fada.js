@@ -139,23 +139,44 @@ container.addEventListener("mousemove", function (event) {
   }
 });
 var solutions = document.querySelector(".solutions__list");
-var quote = document.querySelector(".quote");
+var solutionsQuote = document.querySelector(".solutions-quote");
+var solutionsArray = Array.from(solutions.children);
+var quoteArray = Array.from(solutionsQuote.children);
 var activeSolution = function activeSolution(block) {
   var childArray = Array.from(block.children);
-  var child = childArray[1];
-  child.classList.add("solutions__item_active");
+  childArray[1].classList.add("solutions__item_active");
+};
+var activeQuote = function activeQuote(block) {
+  var quoteArray = Array.from(solutionsQuote.children);
+  quoteArray[1].classList.add("quote_active");
 };
 activeSolution(solutions);
+activeQuote(solutionsQuote);
 solutions.addEventListener("click", function (event) {
   var target = event.target;
   if (target.classList.contains("solutions__item")) {
-    Array.from(solutions.children).forEach(function (element) {
-      var child = element;
-      if (child.classList.contains("solutions__item_active")) {
-        child.classList.remove("solutions__item_active");
+    solutionsArray.forEach(function (element) {
+      if (element.classList.contains("solutions__item_active")) {
+        element.classList.remove("solutions__item_active");
       }
     });
     target.classList.add("solutions__item_active");
+    quoteArray.forEach(function (element) {
+      if (element.classList.contains("quote_active")) {
+        element.classList.remove("quote_active");
+      }
+      switch (solutionsArray.indexOf(target)) {
+        case 0:
+          quoteArray[0].classList.add("quote_active");
+          break;
+        case 1:
+          quoteArray[1].classList.add("quote_active");
+          break;
+        case 2:
+          quoteArray[2].classList.add("quote_active");
+          break;
+      }
+    });
   }
 });
 },{}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
@@ -183,7 +204,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59225" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55870" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];
