@@ -1,8 +1,4 @@
 @import "https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap";
-* p {
-  margin: 0;
-}
-
 body {
   font-family: Inter, sans-serif;
   font-style: normal;
@@ -115,7 +111,7 @@ body {
   text-decoration: none;
 }
 
-.header__button {
+.header__buttons-block {
   margin-left: auto;
 }
 
@@ -138,7 +134,9 @@ body {
   opacity: 0.8;
 }
 
-.button_outline_header {
+.header__button {
+  cursor: pointer;
+  border-radius: 6px;
   margin-right: 16px;
   padding: 8px 20px;
   background-color: rgba(0, 0, 0, 0);
@@ -147,13 +145,13 @@ body {
   font-size: 14px;
   line-height: 24px;
 }
-.button_outline_header:hover {
+.header__button:hover {
   color: #ff5e00;
   border: 1px solid #ff5e00;
   opacity: 0.8;
 }
 @media (max-width: 576px) {
-  .button_outline_header {
+  .header__button {
     display: none;
   }
 }
@@ -673,7 +671,7 @@ body {
   color: #ff5e00;
 }
 
-.table__text_gray {
+.table__text_grey {
   color: #b8b8b8;
 }
 
@@ -905,6 +903,147 @@ body {
     right: 37.1px;
     top: -24px;
   }
+}
+
+.solutions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 96px auto 100px;
+  padding: 0 16px;
+  max-width: 1312px;
+}
+
+.solutions__list {
+  list-style: none;
+  padding: 0;
+}
+
+.solutions__item {
+  box-sizing: border-box;
+  margin-top: 32px;
+  padding: 40px;
+  max-width: 584px;
+  background-color: #fff;
+  border-radius: 24px;
+  opacity: 0.6;
+}
+
+.solutions__item_active {
+  opacity: 1;
+}
+
+.solutions__heading {
+  display: flex;
+}
+
+.solutions__img {
+  margin-right: 17px;
+}
+
+.solutions__sub-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  color: #292929;
+}
+
+.solutions__text {
+  margin: 24px 0 32px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #666;
+}
+
+.solutions__link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  text-decoration: none;
+  color: #3d3d3d;
+}
+
+.solutions__content {
+  position: relative;
+}
+
+.solutions__title {
+  margin-bottom: 48px;
+  max-width: 380px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+  color: #292929;
+}
+
+.solution__quote {
+  position: absolute;
+  z-index: -2;
+}
+
+.solutions__quote_left {
+  top: 150px;
+  left: 360px;
+}
+
+.solutions__quote_right {
+  top: 150px;
+  left: 450px;
+}
+
+.quote {
+  display: none;
+  box-sizing: border-box;
+  max-width: 552px;
+  padding: 48px;
+  background-color: #fff;
+  border-radius: 24px;
+}
+
+.quote_active {
+  display: block;
+}
+
+.quote__top {
+  display: flex;
+}
+
+.quote__photo {
+  margin-bottom: 20px;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.customer-name {
+  margin: 0 auto 0 24px;
+}
+
+.customer-name__title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  color: #292929;
+}
+
+.customer-name__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #b8b8b8;
+}
+
+.quote__text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  color: #3d3d3d;
+}
+
+.quote__img {
+  width: 24px;
+  height: 24px;
 }
 
 .getting-clients {
@@ -1201,34 +1340,40 @@ body {
 }
 
 .faq {
-  margin-top: 160px;
-}
-.faq__title {
-  margin: 0 0 64px;
-}
-.faq__bubble--orange {
-  width: 128px;
-  height: 128px;
-  right: 208px;
-  top: 158px;
-}
-.faq__bubble--white {
-  width: 256px;
-  height: 256px;
-  right: 16px;
-  top: 64px;
+  position: relative;
+  margin: 160px auto 0;
+  max-width: 1312px;
+  padding: 16px;
 }
 
 .question {
   display: flex;
+  align-items: center;
+  width: max-content;
   margin-top: 24px;
-  max-width: 579px;
   padding: 16px 32px 16px 24px;
   border-radius: 32px;
   background: #fff;
 }
-.question__image {
-  margin-right: 12px;
+
+.question__arrow {
+  margin-right: 16px;
+}
+
+.faq__orange-bubble {
+  position: absolute;
+  width: 160px;
+  height: 160px;
+  right: 208px;
+  top: 158px;
+}
+
+.faq__white-bubble {
+  position: absolute;
+  width: 256px;
+  height: 256px;
+  right: 16px;
+  top: 64px;
 }
 
 .seo-block {
@@ -1322,13 +1467,13 @@ body {
   background: #292929;
   overflow: hidden;
 }
-.cta-form__bubble--big-gray {
+.cta-form__bubble--big-grey {
   width: 460px;
   height: 460px;
   left: 1010px;
   bottom: -365px;
 }
-.cta-form__bubble--small-gray {
+.cta-form__bubble--small-grey {
   width: 160px;
   height: 160px;
   left: calc(50% - 80px);
