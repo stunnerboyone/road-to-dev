@@ -118,65 +118,59 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   return newRequire;
 })({"scripts/script.js":[function(require,module,exports) {
-var container = document.querySelector(".how-it-works-list");
-var item = document.querySelector(".how-it-works-list__item");
-var setActive = function setActive(block) {
-  var childArray = Array.from(block.children);
-  var child = childArray[1];
-  child.classList.add("how-it-works-list__active");
+var removeClass = function removeClass(Array, classToRemove) {
+  Array.forEach(function (element) {
+    if (element.classList.contains(classToRemove)) {
+      element.classList.remove(classToRemove);
+    }
+  });
 };
-setActive(container);
+
+/* --------------How it works block--------------*/
+var container = document.querySelector(".how-it-works-list");
+var howItWorksActive = "how-it-works-list__active";
+var containerArray = Array.from(container.children);
+containerArray[1].classList.add(howItWorksActive);
 container.addEventListener("mousemove", function (event) {
   var target = event.target;
   if (target.classList.contains("how-it-works-list__item")) {
-    Array.from(container.children).forEach(function (element) {
-      var child = element;
-      if (child.classList.contains("how-it-works-list__active")) {
-        child.classList.remove("how-it-works-list__active");
-      }
-    });
-    target.classList.add("how-it-works-list__active");
+    removeClass(containerArray, howItWorksActive);
+    target.classList.add(howItWorksActive);
   }
 });
+
+/*-------solutions block--------*/
+
+var solutionsActiveClass = "solutions__item_active";
+var quoteActiveClass = "quote_active";
 var solutions = document.querySelector(".solutions__list");
 var solutionsQuote = document.querySelector(".solutions-quote");
 var solutionsArray = Array.from(solutions.children);
 var quoteArray = Array.from(solutionsQuote.children);
-var activeSolution = function activeSolution(block) {
-  var childArray = Array.from(block.children);
-  childArray[1].classList.add("solutions__item_active");
-};
-var activeQuote = function activeQuote(block) {
-  var quoteArray = Array.from(solutionsQuote.children);
-  quoteArray[1].classList.add("quote_active");
-};
-activeSolution(solutions);
-activeQuote(solutionsQuote);
+solutionsArray[1].classList.add("solutions__item_active");
+quoteArray[1].classList.add("quote_active");
 solutions.addEventListener("click", function (event) {
   var target = event.target;
   if (target.classList.contains("solutions__item")) {
-    solutionsArray.forEach(function (element) {
-      if (element.classList.contains("solutions__item_active")) {
-        element.classList.remove("solutions__item_active");
-      }
-    });
-    target.classList.add("solutions__item_active");
-    quoteArray.forEach(function (element) {
-      if (element.classList.contains("quote_active")) {
-        element.classList.remove("quote_active");
-      }
-      switch (solutionsArray.indexOf(target)) {
-        case 0:
-          quoteArray[0].classList.add("quote_active");
-          break;
-        case 1:
-          quoteArray[1].classList.add("quote_active");
-          break;
-        case 2:
-          quoteArray[2].classList.add("quote_active");
-          break;
-      }
-    });
+    removeClass(solutionsArray, solutionsActiveClass);
+    target.classList.add(solutionsActiveClass);
+    removeClass(quoteArray, quoteActiveClass);
+    var solutionsIndex = solutionsArray.indexOf(target);
+    quoteArray[solutionsIndex].classList.add(quoteActiveClass);
+  }
+});
+
+/*--------------Results block--------------*/
+
+var resultsActiveClass = "results-block__item_active";
+var resultsBlock = document.querySelector(".results-block");
+var resultsArray = Array.from(resultsBlock.children);
+resultsArray[1].classList.add("results-block__item_active");
+resultsBlock.addEventListener("mousemove", function (event) {
+  var target = event.target;
+  if (target.classList.contains("results-block__item")) {
+    removeClass(resultsArray, resultsActiveClass);
+    target.classList.add(resultsActiveClass);
   }
 });
 },{}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
@@ -204,7 +198,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55870" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "65331" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];
